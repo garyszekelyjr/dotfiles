@@ -1,16 +1,25 @@
-local builtin = require('telescope.builtin')
-local telescope = require('telescope')
+return {
+	"nvim-telescope/telescope.nvim",
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+		"nvim-tree/nvim-web-devicons",
+		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" }
+	},
+	config = function()
+		require("telescope").setup {
+			defaults = {
+				file_ignore_patterns = { "node_modules", "__pycache__" }
+			}
+		}
 
-
-telescope.setup {
-	defaults = {
-		file_ignore_patterns = { "node_modules", "__pycache__" },
-	}
+		vim.keymap.set("n", "<Leader>fb", require("telescope.builtin").buffers)
+		vim.keymap.set("n", "<Leader>ff", require("telescope.builtin").find_files)
+		vim.keymap.set("n", "<Leader>fg", require("telescope.builtin").live_grep)
+		vim.keymap.set("n", "<Leader>fh", require("telescope.builtin").help_tags)
+		vim.keymap.set("n", "<Leader>fn", function()
+			require("telescope.builtin").find_files {
+				cwd = vim.fn.stdpath("config")
+			}
+		end)
+	end
 }
-
-
-vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
-vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
-
