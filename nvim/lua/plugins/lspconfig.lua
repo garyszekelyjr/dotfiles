@@ -19,14 +19,18 @@ return {
 			cmd = {
 				"gopls",
 				root = "~/go/bin"
-			},
-			on_attach = on_attach
+			}
 		}
+		require('lspconfig').lua_ls.setup {}
+		require("lspconfig").pyright.setup {}
+		require("lspconfig").svelte.setup {}
+		require("lspconfig").ts_ls.setup {}
 
-		require('lspconfig').lua_ls.setup { }
-		require("lspconfig").pyright.setup{ }
-		require("lspconfig").svelte.setup { }
-		require("lspconfig").ts_ls.setup { }
+		vim.api.nvim_create_autocmd("BufWritePre", {
+			callback = function(args)
+				vim.lsp.buf.format({ bufnr = args.buf })
+			end
+		})
 
 		vim.diagnostic.config({
 			update_in_insert = true
