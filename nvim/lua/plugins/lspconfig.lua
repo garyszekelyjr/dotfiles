@@ -36,10 +36,6 @@ return {
 					vim.lsp.buf.format({ bufnr = args.buf })
 				end
 			})
-
-			vim.diagnostic.config({
-				update_in_insert = true
-			})
 		end
 	}
 }

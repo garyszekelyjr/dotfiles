@@ -15,8 +15,10 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
-vim.wo.number = true
 
 require("lazy").setup({
 	spec = { { import = "plugins" } }
 })
+
+require("config.keymaps")
+require("config.options")
