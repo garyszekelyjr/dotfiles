@@ -1,8 +1,8 @@
 return {
-	'stevearc/oil.nvim',
-	---@module 'oil'
+	"stevearc/oil.nvim",
+	---@module "oil"
 	---@type oil.SetupOpts
-	dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
+	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		require("oil").setup {
 			columns = {
@@ -10,7 +10,10 @@ return {
 				"size"
 			},
 			view_options = {
-				show_hidden = true
+				show_hidden = true,
+				open_float = {
+					enabled = true
+				}
 			}
 		}
 	end

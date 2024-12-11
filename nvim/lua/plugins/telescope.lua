@@ -12,7 +12,12 @@ return {
 					"node_modules",
 					"__pycache__"
 				}
+			},
+			extensions = {
+				fzf = {}
 			}
 		}
+
+		require("telescope").load_extension("fzf")
 	end
 }

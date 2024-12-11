@@ -2,14 +2,14 @@ return {
 	{
 		"catppuccin/nvim",
 		name = "catppuccin",
-		enabled = true,
+		enabled = false,
 		config = function()
 			vim.cmd.colorscheme("catppuccin-mocha")
 		end
 	},
 	{
 		"folke/tokyonight.nvim",
-		enabled = false,
+		enabled = true,
 		config = function()
 			vim.cmd.colorscheme("tokyonight")
 		end
