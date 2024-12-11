@@ -10,6 +10,7 @@ return {
 			defaults = {
 				file_ignore_patterns = {
 					".git",
+					".venv",
 					"node_modules",
 					"__pycache__"
 				}
