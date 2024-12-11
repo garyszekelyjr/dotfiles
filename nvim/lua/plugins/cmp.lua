@@ -13,13 +13,26 @@ return {
 					vim.snippet.expand(args.body)
 				end
 			},
-			sources = require("cmp").config.sources({
-				{ name = 'nvim_lsp' },
+			sources = {
 				{ name = 'buffer' },
-			}),
+				{ name = 'nvim_lsp' }
+			},
 			mapping = require("cmp").mapping.preset.insert({
 				['<CR>'] = require("cmp").mapping.confirm({ select = true })
 			})
 		}
+
+		require("cmp").setup.cmdline({ '/', '?' }, {
+			mapping = require("cmp").mapping.preset.cmdline(),
+			sources = { name = 'buffer' }
+		})
+
+		require("cmp").setup.cmdline(':', {
+			mapping = require("cmp").mapping.preset.cmdline(),
+			sources = {
+				{ name = 'path' },
+				{ name = 'cmdline' }
+			}
+		})
 	end
 }

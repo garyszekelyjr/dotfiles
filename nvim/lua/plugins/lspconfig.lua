@@ -26,6 +26,7 @@ return {
 					root = "~/go/bin"
 				}
 			}
+			require('lspconfig').html.setup {}
 			require('lspconfig').lua_ls.setup {}
 			require("lspconfig").pyright.setup {}
 			require("lspconfig").svelte.setup {}
