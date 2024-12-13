@@ -2,7 +2,7 @@ return {
 	{
 		"catppuccin/nvim",
 		name = "catppuccin",
-		enabled = true,
+		enabled = false,
 		config = function()
 			vim.cmd.colorscheme("catppuccin-frappe")
 		end
@@ -12,6 +12,13 @@ return {
 		enabled = false,
 		config = function()
 			vim.cmd.colorscheme("tokyonight-night")
+		end
+	},
+	{
+		"rebelot/kanagawa.nvim",
+		enabled = true,
+		config = function()
+			vim.cmd.colorscheme("kanagawa")
 		end
 	}
 }
