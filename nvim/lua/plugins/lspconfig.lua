@@ -32,6 +32,12 @@ return {
 			require("lspconfig").svelte.setup {}
 			require("lspconfig").ts_ls.setup {}
 
+
+			vim.diagnostic.config({
+				update_in_insert = true
+			})
+
+
 			vim.api.nvim_create_autocmd("BufWritePre", {
 				callback = function(args)
 					vim.lsp.buf.format({ bufnr = args.buf })

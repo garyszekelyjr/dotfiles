@@ -5,6 +5,15 @@ return {
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		"nvim-tree/nvim-web-devicons"
 	},
+	keys = {
+		{ "<Leader>fb", require("telescope.builtin").buffers },
+		{ "<Leader>fh", require("telescope.builtin").help_tags },
+		{ "<Leader>ff", require("telescope.builtin").find_files },
+		{ "<Leader>fg", require("telescope.builtin").live_grep },
+		{ "<Leader>fc", function()
+			require("telescope.builtin").find_files { cwd = vim.fn.stdpath("config") }
+		end }
+	},
 	config = function()
 		require("telescope").setup {
 			defaults = {
