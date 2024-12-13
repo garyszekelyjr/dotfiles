@@ -4,7 +4,7 @@ return {
 		name = "catppuccin",
 		enabled = true,
 		config = function()
-			vim.cmd.colorscheme("catppuccin-mocha")
+			vim.cmd.colorscheme("catppuccin-frappe")
 		end
 	},
 	{
