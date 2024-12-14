@@ -1,7 +1,7 @@
 return {
 	{
 		"github/copilot.vim",
-		enabled = true
+		enabled = false
 	},
 	{
 		"neovim/nvim-lspconfig",
@@ -20,23 +20,17 @@ return {
 			}
 		},
 		config = function()
-			require('lspconfig').gopls.setup {
-				cmd = {
-					"gopls",
-					root = "~/go/bin"
-				}
-			}
+			require('lspconfig').gopls.setup {}
 			require('lspconfig').html.setup {}
 			require('lspconfig').lua_ls.setup {}
 			require("lspconfig").pyright.setup {}
+			require("lspconfig").ruff.setup {}
 			require("lspconfig").svelte.setup {}
 			require("lspconfig").ts_ls.setup {}
-
 
 			vim.diagnostic.config({
 				update_in_insert = true
 			})
-
 
 			vim.api.nvim_create_autocmd("BufWritePre", {
 				callback = function(args)

@@ -15,6 +15,7 @@ require("lazy").setup({
 
 
 vim.wo.number = true
+vim.wo.wrap = false
 
 vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()

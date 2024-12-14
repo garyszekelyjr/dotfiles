@@ -19,7 +19,10 @@ return {
 			},
 			mapping = require("cmp").mapping.preset.insert({
 				['<CR>'] = require("cmp").mapping.confirm({ select = true })
-			})
+			}),
+			completion = {
+				keyword_length = 3
+			}
 		}
 
 		require("cmp").setup.cmdline({ '/', '?' }, {
