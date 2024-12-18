@@ -1,11 +1,12 @@
 return {
 	{
 		"github/copilot.vim",
-		enabled = false
+		enabled = true
 	},
 	{
 		"neovim/nvim-lspconfig",
 		dependencies = {
+			'saghen/blink.cmp',
 			{
 				"folke/lazydev.nvim",
 				ft = "lua",
@@ -20,9 +21,13 @@ return {
 			}
 		},
 		config = function()
+			local capabilities = require('blink.cmp').get_lsp_capabilities()
+
 			require('lspconfig').gopls.setup {}
 			require('lspconfig').html.setup {}
-			require('lspconfig').lua_ls.setup {}
+			require('lspconfig').lua_ls.setup {
+				capabilities = capabilities
+			}
 			require("lspconfig").pyright.setup {}
 			require("lspconfig").ruff.setup {}
 			require("lspconfig").svelte.setup {}
