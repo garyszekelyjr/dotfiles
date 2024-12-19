@@ -6,11 +6,11 @@ return {
 		"nvim-tree/nvim-web-devicons"
 	},
 	keys = {
-		{ "<Leader>fb", require("telescope.builtin").buffers },
-		{ "<Leader>fh", require("telescope.builtin").help_tags },
-		{ "<Leader>ff", require("telescope.builtin").find_files },
-		{ "<Leader>fg", require("telescope.builtin").live_grep },
-		{ "<Leader>fc", function()
+		{ "<Space>fb", require("telescope.builtin").buffers },
+		{ "<Space>fh", require("telescope.builtin").help_tags },
+		{ "<Space>ff", require("telescope.builtin").find_files },
+		{ "<Space>fg", require("telescope.builtin").live_grep },
+		{ "<Space>fc", function()
 			require("telescope.builtin").find_files { cwd = vim.fn.stdpath("config") }
 		end }
 	},
