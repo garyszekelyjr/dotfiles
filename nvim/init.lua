@@ -42,8 +42,8 @@ vim.api.nvim_create_autocmd("TermLeave", {
 
 
 vim.api.nvim_create_user_command("Terminal", function()
-	local width = math.floor(vim.o.columns * 0.75)
-	local height = math.floor(vim.o.lines * 0.75)
+	local width = math.floor(vim.o.columns * 0.8)
+	local height = math.floor(vim.o.lines * 0.8)
 	local cols = math.floor((vim.o.columns - width) / 2)
 	local rows = math.floor((vim.o.lines - height) / 2)
 
