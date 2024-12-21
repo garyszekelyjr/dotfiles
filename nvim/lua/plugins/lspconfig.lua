@@ -1,7 +1,7 @@
 return {
 	{
 		"github/copilot.vim",
-		enabled = true
+		enabled = false
 	},
 	{
 		"neovim/nvim-lspconfig",
@@ -27,6 +27,9 @@ return {
 				capabilities = capabilities
 			}
 			require('lspconfig').html.setup {
+				capabilities = capabilities
+			}
+			require('lspconfig').lemminx.setup {
 				capabilities = capabilities
 			}
 			require('lspconfig').lua_ls.setup {
