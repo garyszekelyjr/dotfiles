@@ -19,6 +19,7 @@ if test -e ~/.tmux.conf
 end
 
 ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
+
 ln -s ~/.dotfiles/kitty ~/.config/kitty
 ln -s ~/.dotfiles/fish ~/.config/fish
 ln -s ~/.dotfiles/nvim ~/.config/nvim
