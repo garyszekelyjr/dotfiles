@@ -23,6 +23,23 @@ return {
 		config = function()
 			local capabilities = require('blink.cmp').get_lsp_capabilities()
 
+			require('lspconfig').bashls.setup {
+				capabilities = capabilities
+			}
+			require('lspconfig').docker_compose_language_service.setup {
+				capabilities = capabilities,
+			}
+			require("lspconfig").dockerls.setup {
+				settings = {
+					docker = {
+						languageserver = {
+							formatter = {
+								ignoreMultilineInstructions = true,
+							},
+						},
+					}
+				}
+			}
 			require('lspconfig').gopls.setup {
 				capabilities = capabilities
 			}
