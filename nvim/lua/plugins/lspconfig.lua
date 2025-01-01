@@ -1,7 +1,7 @@
 return {
 	{
 		"github/copilot.vim",
-		enabled = false
+		enabled = true
 	},
 	{
 		"neovim/nvim-lspconfig",
@@ -56,6 +56,9 @@ return {
 				capabilities = capabilities
 			}
 			require("lspconfig").ruff.setup {
+				capabilities = capabilities
+			}
+			require 'lspconfig'.rust_analyzer.setup {
 				capabilities = capabilities
 			}
 			require("lspconfig").svelte.setup {
