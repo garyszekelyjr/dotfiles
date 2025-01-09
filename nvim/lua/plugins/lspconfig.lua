@@ -64,6 +64,9 @@ return {
 			require("lspconfig").svelte.setup {
 				capabilities = capabilities
 			}
+			require("lspconfig").taplo.setup {
+				capabilities = capabilities
+			}
 			require("lspconfig").ts_ls.setup {
 				capabilities = capabilities
 			}

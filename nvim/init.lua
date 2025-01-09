@@ -14,7 +14,6 @@ require("lazy").setup({ spec = { import = "plugins" } })
 vim.api.nvim_create_autocmd("BufEnter", {
 	callback = function()
 		vim.opt.number = true
-		vim.opt.wrap = false
 
 		if vim.fn.expand("<afile>") == "docker-compose.yml" then vim.cmd("set filetype=yaml.docker-compose") end
 	end
