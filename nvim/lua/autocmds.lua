@@ -4,6 +4,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end
 })
 
+vim.api.nvim_create_autocmd("VimEnter", {
+	command = "TSEnable highlight",
+})
+
 vim.api.nvim_create_autocmd("BufEnter", {
 	callback = function()
 		vim.opt.number = true
@@ -14,6 +18,11 @@ vim.api.nvim_create_autocmd("BufEnter", {
 	end
 })
 
+vim.api.nvim_create_autocmd("BufWritePre", {
+	callback = function(args)
+		vim.lsp.buf.format({ bufnr = args.buf })
+	end
+})
 
 vim.api.nvim_create_autocmd("TermEnter", {
 	callback = function()

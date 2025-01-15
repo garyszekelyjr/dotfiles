@@ -20,62 +20,28 @@ return {
 				}
 			}
 		},
-		config = function()
-			local capabilities = require('blink.cmp').get_lsp_capabilities()
-
-			require('lspconfig').bashls.setup {
-				capabilities = capabilities
+		opts = {
+			lsps = {
+				bashls = {},
+				docker_compose_language_service = {},
+				dockerls = {},
+				gopls = {},
+				html = {},
+				lemminx = {},
+				lua_ls = {},
+				pyright = {},
+				ruff = {},
+				rust_analyzer = {},
+				svelte = {},
+				taplo = {},
+				ts_ls = {}
 			}
-			require('lspconfig').docker_compose_language_service.setup {
-				capabilities = capabilities,
-			}
-			require("lspconfig").dockerls.setup {
-				settings = {
-					docker = {
-						languageserver = {
-							formatter = {
-								ignoreMultilineInstructions = true,
-							},
-						},
-					}
-				}
-			}
-			require('lspconfig').gopls.setup {
-				capabilities = capabilities
-			}
-			require('lspconfig').html.setup {
-				capabilities = capabilities
-			}
-			require('lspconfig').lemminx.setup {
-				capabilities = capabilities
-			}
-			require('lspconfig').lua_ls.setup {
-				capabilities = capabilities
-			}
-			require("lspconfig").pyright.setup {
-				capabilities = capabilities
-			}
-			require("lspconfig").ruff.setup {
-				capabilities = capabilities
-			}
-			require 'lspconfig'.rust_analyzer.setup {
-				capabilities = capabilities
-			}
-			require("lspconfig").svelte.setup {
-				capabilities = capabilities
-			}
-			require("lspconfig").taplo.setup {
-				capabilities = capabilities
-			}
-			require("lspconfig").ts_ls.setup {
-				capabilities = capabilities
-			}
-
-			vim.api.nvim_create_autocmd("BufWritePre", {
-				callback = function(args)
-					vim.lsp.buf.format({ bufnr = args.buf })
-				end
-			})
+		},
+		config = function(_, opts)
+			for lsp, config in pairs(opts.lsps) do
+				config.capabilities = require("blink.cmp").get_lsp_capabilities(config.capabilities)
+				require("lspconfig")[lsp].setup(config)
+			end
 		end
 	}
 }
