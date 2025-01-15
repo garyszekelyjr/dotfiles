@@ -11,3 +11,8 @@ require("lazy").setup({ spec = { import = "plugins" } })
 
 require("autocmds")
 require("commands")
+
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldtext = ""
+vim.opt.foldlevel = 99
