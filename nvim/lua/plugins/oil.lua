@@ -4,16 +4,19 @@ return {
 	---@type oil.SetupOpts
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	keys = {
-		{ "-", ":Oil<CR>" }
+		{ "-", ":Oil --float<CR>" }
 	},
 	config = function()
-		require("oil").setup {
+		require("oil").setup({
+			keymaps = {
+				["<Esc>"] = { "actions.close", mode = "n" }
+			},
 			view_options = {
 				show_hidden = true,
-				open_float = {
-					enabled = true
-				}
+			},
+			float = {
+				preview_split = "right"
 			}
-		}
+		})
 	end
 }
