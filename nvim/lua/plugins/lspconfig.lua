@@ -29,6 +29,7 @@ return {
 				html = {},
 				lemminx = {},
 				lua_ls = {},
+				marksman = {},
 				pyright = {},
 				ruff = {},
 				rust_analyzer = {},

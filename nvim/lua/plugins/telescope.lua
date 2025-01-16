@@ -9,10 +9,13 @@ return {
 		require("telescope").setup {
 			defaults = {
 				file_ignore_patterns = {
+					".bsp",
 					".git",
+					".idea",
 					".venv",
 					"node_modules",
-					"__pycache__"
+					"target",
+					"__pycache__",
 				}
 			},
 			pickers = {
