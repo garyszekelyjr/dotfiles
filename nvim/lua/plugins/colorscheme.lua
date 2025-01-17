@@ -2,7 +2,7 @@ return {
 	{
 		"catppuccin/nvim",
 		name = "catppuccin",
-		enabled = false,
+		enabled = true,
 		opts = {
 			styles = {
 				latte = "latte",
@@ -12,7 +12,7 @@ return {
 			}
 		},
 		config = function(_, opts)
-			vim.cmd.colorscheme("catppuccin-" .. opts.styles.macchiato)
+			vim.cmd.colorscheme("catppuccin-" .. opts.styles.mocha)
 		end
 	},
 	{

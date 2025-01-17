@@ -4,10 +4,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end
 })
 
-vim.api.nvim_create_autocmd("VimEnter", {
-	command = "TSEnable highlight",
-})
-
 vim.api.nvim_create_autocmd("BufEnter", {
 	callback = function()
 		vim.opt.number = true
