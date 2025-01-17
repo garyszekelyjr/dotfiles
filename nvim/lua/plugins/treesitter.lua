@@ -4,6 +4,7 @@ return {
 	opts = {
 		parsers = {
 			"dockerfile",
+			"fish",
 			"go",
 			"java",
 			"javascript",
@@ -19,7 +20,15 @@ return {
 	config = function(_, opts)
 		require("nvim-treesitter.configs").setup({
 			ensure_installed = opts.parsers,
-			highlight = { enable = true },
+			sync_install = true,
+			auto_install = false,
+			ignore_install = {},
+			modules = {},
+			highlight = { enable = true, },
 		})
+		vim.opt.foldmethod = "expr"
+		vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+		vim.opt.foldtext = ""
+		vim.opt.foldlevelstart = 99
 	end
 }

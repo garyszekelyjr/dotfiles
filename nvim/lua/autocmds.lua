@@ -7,6 +7,8 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 vim.api.nvim_create_autocmd("BufEnter", {
 	callback = function()
 		vim.opt.number = true
+		vim.cmd("set list")
+		vim.cmd("set listchars=tab:\\|\\-")
 
 		if vim.fn.expand("<afile>") == "docker-compose.yml" then
 			vim.cmd("set filetype=yaml.docker-compose")

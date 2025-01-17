@@ -5,21 +5,25 @@ return {
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		"nvim-tree/nvim-web-devicons"
 	},
+	keys = {
+		{ "<Space>fb", ":Telescope buffers<CR>" },
+		{ "<Space>fc", ":Telescope find_files cwd=" .. vim.fn.stdpath("config") .. "<CR>" },
+		{ "<Space>ff", ":Telescope find_files<CR>" },
+		{ "<Space>fg", ":Telescope live_grep<CR>" },
+		{ "<Space>fh", ":Telescope help_tags<CR>" }
+	},
 	config = function()
-		require("telescope").setup {
+		require("telescope").setup({
+			pickers = {
+				find_files = {
+					hidden = false
+				}
+			},
 			extensions = {
 				fzf = {}
 			}
-		}
+		})
 
 		require("telescope").load_extension("fzf")
-
-		vim.keymap.set("n", "<Space>fb", require("telescope.builtin").buffers)
-		vim.keymap.set("n", "<Space>fc", function()
-			require("telescope.builtin").find_files({ cwd = vim.fn.stdpath("config") .. "/.." })
-		end)
-		vim.keymap.set("n", "<Space>ff", require("telescope.builtin").find_files)
-		vim.keymap.set("n", "<Space>fg", require("telescope.builtin").live_grep)
-		vim.keymap.set("n", "<Space>fh", require("telescope.builtin").help_tags)
 	end
 }
