@@ -12,18 +12,18 @@ return {
 		{ "<Space>fg", ":Telescope live_grep<CR>" },
 		{ "<Space>fh", ":Telescope help_tags<CR>" }
 	},
-	config = function()
-		require("telescope").setup({
-			pickers = {
-				find_files = {
-					hidden = false
-				}
-			},
-			extensions = {
-				fzf = {}
+	opts = {
+		pickers = {
+			find_files = {
+				hidden = false
 			}
-		})
+		},
+		extensions = {
+			fzf = {}
+		}
 
+	},
+	config = function()
 		require("telescope").load_extension("fzf")
 	end
 }
