@@ -23,7 +23,7 @@ config.keys = {
 		action = wezterm.action { CloseCurrentPane = { confirm = true } }
 	},
 	{
-		key = "|",
+		key = "\\",
 		mods = "LEADER",
 		action = wezterm.action.SplitHorizontal {}
 	},
