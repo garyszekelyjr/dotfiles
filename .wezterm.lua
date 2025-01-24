@@ -32,11 +32,6 @@ config.keys = {
 		mods = "LEADER",
 		action = wezterm.action.SplitVertical {}
 	},
-	{
-		key = "s",
-		mods = "LEADER",
-		action = wezterm.action.PaneSelect {}
-	}
 }
 
 for i = 1, 9 do

@@ -23,6 +23,7 @@ return {
 		opts = {
 			lsps = {
 				bashls = {},
+				cssls = {},
 				docker_compose_language_service = {},
 				dockerls = {},
 				gopls = {},
@@ -35,6 +36,7 @@ return {
 				ruff = {},
 				rust_analyzer = {},
 				svelte = {},
+				tailwindcss = {},
 				taplo = {},
 				ts_ls = {}
 			}
