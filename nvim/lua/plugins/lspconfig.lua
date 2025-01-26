@@ -28,6 +28,7 @@ return {
 				dockerls = {},
 				gopls = {},
 				html = {},
+				htmx = {},
 				jsonls = {},
 				lemminx = {},
 				lua_ls = {},
