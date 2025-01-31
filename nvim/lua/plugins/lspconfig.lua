@@ -34,6 +34,7 @@ return {
 				lua_ls = {},
 				marksman = {},
 				pyright = {},
+				ruby_lsp = {},
 				ruff = {},
 				rust_analyzer = {},
 				svelte = {},
