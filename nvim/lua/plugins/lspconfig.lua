@@ -40,7 +40,8 @@ return {
 				svelte = {},
 				tailwindcss = {},
 				taplo = {},
-				ts_ls = {}
+				ts_ls = {},
+				zls = {}
 			}
 		},
 		config = function(_, opts)

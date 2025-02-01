@@ -14,8 +14,8 @@ if test -e ~/.config/nvim
 	rm -r ~/.config/nvim
 end
 
-ln -s ~/.dotfiles/.wezterm.lua ~/.wezterm.lua
-ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
-ln -s ~/.dotfiles/fish ~/.config/fish
-ln -s ~/.dotfiles/nvim ~/.config/nvim
+ln -s $PWD/.wezterm.lua ~/.wezterm.lua
+ln -s $PWD/.tmux.conf ~/.tmux.conf
+ln -s $PWD/fish ~/.config/fish
+ln -s $PWD/nvim ~/.config/nvim
 
