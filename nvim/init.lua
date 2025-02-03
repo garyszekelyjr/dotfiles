@@ -11,3 +11,4 @@ require("lazy").setup({ spec = { import = "plugins" } })
 
 require("autocmds")
 require("commands")
+require("keymaps")
