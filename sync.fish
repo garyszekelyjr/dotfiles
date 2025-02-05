@@ -1,21 +1,22 @@
-if test -e ~/.wezterm.lua
+set DIR ( realpath (status dirname) ) 
+
+if test -e $HOME/.wezterm.lua
 	rm -f ~/.wezterm.lua
 end
 
-if test -e ~/.tmux.conf
+if test -e $HOME/.tmux.conf
 	rm -f ~/.tmux.conf
 end
 
-if test -e ~/.config/fish
+if test -e $HOME/.config/fish
 	rm -rf ~/.config/fish
 end
 
-if test -e ~/.config/nvim
+if test -e $HOME/.config/nvim
 	rm -rf ~/.config/nvim
 end
 
-ln -s $PWD/wezterm/.wezterm.lua ~/.wezterm.lua
-ln -s $PWD/tmux/.tmux.conf ~/.tmux.conf
-ln -s $PWD/fish ~/.config/fish
-ln -s $PWD/nvim ~/.config/nvim
-
+ln -s $DIR/wezterm/.wezterm.lua $HOME/.wezterm.lua
+ln -s $DIR/tmux/.tmux.conf $HOME/.tmux.conf
+ln -s $DIR/fish $HOME/.config/fish
+ln -s $DIR/nvim $HOME/.config/nvim
