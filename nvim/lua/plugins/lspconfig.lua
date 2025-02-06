@@ -28,6 +28,7 @@ return {
 			lemminx = {},
 			lua_ls = {},
 			marksman = {},
+			nushell = {},
 			pyright = {},
 			ruby_lsp = {},
 			ruff = {},

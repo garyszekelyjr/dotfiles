@@ -9,6 +9,7 @@ return {
 			"go",
 			"java",
 			"javascript",
+			"nu",
 			"powershell",
 			"python",
 			"rust",
