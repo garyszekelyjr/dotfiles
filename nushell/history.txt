@@ -1,4 +1,0 @@
-rm nushell\history.txt
-ls nushell\
-git add .
-git status
