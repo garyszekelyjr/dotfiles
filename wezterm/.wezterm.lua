@@ -45,7 +45,7 @@ end
 if package.config:sub(1, 1) == "\\" then
 	-- Windows
 	config.font_size = 9
-	config.default_prog = { "powershell" }
+	config.default_prog = { "nu" }
 end
 
 return config
