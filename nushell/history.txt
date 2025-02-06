@@ -1,18 +1,4 @@
-nvim
-ls -al
-activate 
-cd ..
-cd solve-ub-mock\
-activate 
-activate
-cd ..
-cd solve-ub-mock\
-activate 
-pip list
-$env.config
-cd ..
-git diff
-git stash
-git pull
-git log
+rm nushell\history.txt
+ls nushell\
+git add .
 git status
