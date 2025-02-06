@@ -5,7 +5,7 @@ end
 # Added by `rbenv init` on Tue Jan 28 16:32:45 EST 2025
 status --is-interactive; and rbenv init - --no-rehash fish | source
 
-alias activate "source .venv/bin/activate.fish"
+abbr activate "source .venv/bin/activate.fish"
 
 function sgit
 	switch $argv[1]
