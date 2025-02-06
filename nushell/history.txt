@@ -12,3 +12,7 @@ pip list
 $env.config
 cd ..
 git diff
+git stash
+git pull
+git log
+git status
