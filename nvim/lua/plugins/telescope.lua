@@ -6,11 +6,11 @@ return {
 		"nvim-tree/nvim-web-devicons"
 	},
 	keys = {
-		{ "<Space>fb", ":Telescope buffers<CR>" },
-		{ "<Space>fc", ":Telescope find_files cwd=" .. vim.fn.stdpath("config") .. "<CR>" },
-		{ "<Space>ff", ":Telescope find_files<CR>" },
-		{ "<Space>fg", ":Telescope live_grep<CR>" },
-		{ "<Space>fh", ":Telescope help_tags<CR>" }
+		{ "<Leader>fb", ":Telescope buffers<CR>" },
+		{ "<Leader>fc", ":Telescope find_files cwd=" .. vim.fn.stdpath("config") .. "<CR>" },
+		{ "<Leader>ff", ":Telescope find_files<CR>" },
+		{ "<Leader>fg", ":Telescope live_grep<CR>" },
+		{ "<Leader>fh", ":Telescope help_tags<CR>" }
 	},
 	opts = {
 		pickers = {
