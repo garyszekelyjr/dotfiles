@@ -46,6 +46,8 @@ if package.config:sub(1, 1) == "\\" then
 	-- Windows
 	config.font_size = 9
 	config.default_prog = { "nu" }
+else
+	config.default_prog = { "fish" }
 end
 
 return config
