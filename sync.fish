@@ -1,8 +1,9 @@
 set DIR ( realpath (status dirname) ) 
 
-rm -rf $HOME/.lintr
 rm -f $HOME/.tmux.conf
 rm -f $HOME/.wezterm.lua
+
+rm -rf $HOME/.lintr
 rm -rf $HOME/.config/fish
 rm -rf $HOME/.config/nvim
 rm -rf "$HOME/Library/Application Support/nushell"
