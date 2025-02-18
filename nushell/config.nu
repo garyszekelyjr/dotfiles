@@ -1,4 +1,4 @@
-alias activate = overlay use .venv/bin/activate.nu
+alias activate = overlay use .venv\Scripts\activate.nu
 
 def sgit [command, ...args] {
 	match $command {
