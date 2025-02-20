@@ -19,16 +19,3 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 		vim.lsp.buf.format({ bufnr = args.buf })
 	end
 })
-
-vim.api.nvim_create_autocmd("TermEnter", {
-	callback = function()
-		vim.opt.number = false
-		vim.opt.relativenumber = false
-	end
-})
-
-vim.api.nvim_create_autocmd("TermLeave", {
-	callback = function()
-		vim.opt.number = true
-	end
-})
