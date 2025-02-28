@@ -32,6 +32,26 @@ config.keys = {
 		mods = "LEADER",
 		action = wezterm.action.SplitVertical {}
 	},
+	{
+		key = 'LeftArrow',
+		mods = 'LEADER',
+		action = wezterm.action.ActivatePaneDirection 'Left',
+	},
+	{
+		key = 'RightArrow',
+		mods = 'LEADER',
+		action = wezterm.action.ActivatePaneDirection 'Right',
+	},
+	{
+		key = 'UpArrow',
+		mods = 'LEADER',
+		action = wezterm.action.ActivatePaneDirection 'Up',
+	},
+	{
+		key = 'DownArrow',
+		mods = 'LEADER',
+		action = wezterm.action.ActivatePaneDirection 'Down',
+	},
 }
 
 for i = 1, 9 do

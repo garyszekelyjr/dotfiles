@@ -4,7 +4,7 @@ return {
 	priority = 1000,
 	keys = {
 		{ "<C-w>a", function() Snacks.bufdelete.all() end },
-		{ "<C-w>c", function() Snacks.bufdelete.delete() end },
+		{ "<C-w>x", function() Snacks.bufdelete.delete() end },
 		{ "<C-w>o", function() Snacks.bufdelete.other() end },
 	},
 	---@type snacks.Config
