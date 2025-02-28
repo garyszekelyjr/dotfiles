@@ -4,6 +4,7 @@ return {
 	keys = {
 		{ "-", ":Oil --float<CR>" }
 	},
+	lazy = false,
 	---@module "oil"
 	---@type oil.SetupOpts
 	opts = {
@@ -19,5 +20,5 @@ return {
 		float = {
 			preview_split = "right"
 		}
-	},
+	}
 }
