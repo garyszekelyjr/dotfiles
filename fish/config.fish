@@ -11,5 +11,3 @@ function sgit
             git $argv
     end
 end
-
-export PATH="$PATH:/Users/gszekely/Library/Application Support/Coursier/bin"
