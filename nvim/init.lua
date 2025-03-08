@@ -9,7 +9,4 @@ vim.opt.rtp:prepend(lazy_path)
 
 require("lazy").setup({ spec = { import = "plugins" } })
 
-require("config.apis")
-require("config.filetypes")
-require("config.keymaps")
-require("config.opts")
+require("config")
