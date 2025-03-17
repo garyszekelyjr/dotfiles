@@ -1,5 +1,3 @@
-abbr activate "source .venv/bin/activate.fish"
-
 function sgit
     switch $argv[1]
         case fc
@@ -11,3 +9,14 @@ function sgit
             git $argv
     end
 end
+
+function venv --on-variable PWD
+    set venv ./.venv
+    if test -d $venv
+        source $venv/bin/activate.fish
+    else if type -q deactivate
+        deactivate
+    end
+end
+
+venv
