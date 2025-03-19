@@ -62,12 +62,6 @@ for i = 1, 9 do
 	}
 end
 
-if package.config:sub(1, 1) == "\\" then
-	-- Windows
-	config.font_size = 9
-	config.default_prog = { "nu" }
-else
-	config.default_prog = { "fish" }
-end
+config.default_prog = { "fish" }
 
 return config

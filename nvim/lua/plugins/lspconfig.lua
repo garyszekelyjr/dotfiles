@@ -30,6 +30,9 @@ return {
 			lua_ls = {},
 			metals = {},
 			nushell = {},
+			powershell_es = {
+				bundle_path = "C:/Program Files/PowerShellEditorServices"
+			},
 			pyright = {},
 			r_language_server = {},
 			ruby_lsp = {},
