@@ -4,7 +4,7 @@ return {
 	keys = {
 		{ "<Leader>b",  ":FzfLua buffers<CR>" },
 		{ "<Leader>f",  ":FzfLua files<CR>" },
-		{ "<Leader>c",  ":FzfLua files cwd=" .. vim.fn.stdpath("config") .. "/..<CR>" },
+		{ "<Leader>c",  ":FzfLua files cwd=" .. vim.fn.stdpath("config") .. "<CR>" },
 		{ "<Leader>g",  ":FzfLua live_grep_native<CR>" },
 		{ "<Leader>h",  ":FzfLua helptags<CR>" },
 		{ "<Leader>r",  ":FzfLua registers<CR>" },
