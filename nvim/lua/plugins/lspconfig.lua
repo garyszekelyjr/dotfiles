@@ -29,6 +29,7 @@ return {
 			lemminx = {},
 			lua_ls = {},
 			metals = {},
+			nixd = {},
 			nushell = {},
 			powershell_es = {
 				bundle_path = "C:/Program Files/PowerShellEditorServices"
