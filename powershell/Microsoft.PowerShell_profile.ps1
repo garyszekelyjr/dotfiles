@@ -1,3 +1,5 @@
+Set-Alias -Name grep -Value Select-String
+
 function sgit {
     param(
         [string]$command,
@@ -35,6 +37,10 @@ function cd {
     
         if (Test-Path ".\.venv\Scripts\activate") {
             .\.venv\Scripts\activate
+        } else {
+            if (Get-Command deactivate -ErrorAction SilentlyContinue) {
+                deactivate
+            } 
         }
 }
 
