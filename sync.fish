@@ -14,4 +14,4 @@ ln -s $DIR/lintr/.lintr $HOME/.lintr
 ln -s $DIR/tmux/.tmux.conf $HOME/.tmux.conf
 ln -s $DIR/wezterm/.wezterm.lua $HOME/.wezterm.lua
 
-cp $DIR/nixos/configuration.nix /etc/nixos/configuration.nix
+sudo cp $DIR/nixos/configuration.nix /etc/nixos/configuration.nix
