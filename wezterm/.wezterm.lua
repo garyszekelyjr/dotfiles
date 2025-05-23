@@ -53,6 +53,17 @@ config.keys = {
 		mods = 'LEADER',
 		action = wezterm.action.ActivatePaneDirection 'Down',
 	},
+	{
+		key = '[',
+		mods = 'LEADER',
+		action = wezterm.action.MoveTabRelative(-1)
+	},
+	{
+		key = ']',
+		mods = 'LEADER',
+		action = wezterm.action.MoveTabRelative(1)
+	}
+
 }
 
 for i = 1, 9 do
