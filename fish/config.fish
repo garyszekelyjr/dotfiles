@@ -22,6 +22,3 @@ end
 venv
 
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar"
-
-# Added by `rbenv init` on Thu Mar 27 13:56:56 EDT 2025
-# status --is-interactive; and rbenv init - --no-rehash fish | source

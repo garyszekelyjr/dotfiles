@@ -74,6 +74,4 @@ for i = 1, 9 do
 	}
 end
 
-config.default_prog = { "fish" }
-
 return config
