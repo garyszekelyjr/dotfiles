@@ -1,4 +1,5 @@
 Set-Alias -Name grep -Value Select-String
+Set-Alias -Name whereis -Value Get-Command
 
 function sgit {
     param(
