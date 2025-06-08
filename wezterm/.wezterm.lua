@@ -8,7 +8,7 @@ config.font_size = 13
 config.default_cursor_style = "SteadyBar"
 
 config.leader = {
-	key = 'a',
+	key = 'Space',
 	mods = 'CTRL',
 	timeout_milliseconds = 2000
 }
