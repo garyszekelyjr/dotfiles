@@ -4,10 +4,10 @@ return {
 		"nvim-treesitter/nvim-treesitter",
 		"nvim-tree/nvim-web-devicons"
 	},
-	--keys = {
-	--	{ "<Leader>mm", ":AerialToggle<CR>" }
-	--},
+	keys = {
+		{ "<Leader>mm", ":AerialToggle<CR>" }
+	},
 	opts = {
-		open_automatic = true
+		-- open_automatic = true
 	},
 }
