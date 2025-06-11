@@ -1,7 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
 	dependencies = {
-		'saghen/blink.cmp',
 		{
 			"folke/lazydev.nvim",
 			ft = "lua",
@@ -48,8 +47,8 @@ return {
 	},
 	config = function(_, opts)
 		for lsp, config in pairs(opts.lsps) do
-			config.capabilities = require("blink.cmp").get_lsp_capabilities(config.capabilities)
-			require("lspconfig")[lsp].setup(config)
+			vim.lsp.enable(lsp)
+			vim.lsp.config(lsp, config)
 		end
 	end
 }
