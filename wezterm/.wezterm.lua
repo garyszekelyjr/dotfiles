@@ -4,7 +4,7 @@ local config = wezterm.config_builder()
 
 config.color_scheme = "Catppuccin Frappe"
 config.font = wezterm.font("JetBrains Mono")
-config.font_size = 13
+config.font_size = 14
 config.default_cursor_style = "SteadyBar"
 
 config.leader = {
