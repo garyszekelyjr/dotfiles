@@ -9,6 +9,8 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end
 })
 
+vim.cmd.colorscheme("tokyonight-moon")
+
 vim.filetype.add({
 	filename = {
 		["docker-compose.yaml"] = "yaml.docker-compose",
@@ -16,11 +18,10 @@ vim.filetype.add({
 	}
 })
 
-vim.keymap.set("n", "<Leader>\\", ":vsplit<CR>")
-vim.keymap.set("n", "<Leader>-", ":split<CR>")
+require("config.keymap")
 
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldlevelstart = 99
 vim.opt.foldmethod = "expr"
 vim.opt.foldtext = ""
-vim.opt.number = true
+vim.opt.relativenumber = true

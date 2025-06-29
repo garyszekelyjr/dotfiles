@@ -1,9 +1,6 @@
 return {
 	"stevearc/oil.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
-	keys = {
-		{ "-", ":Oil --float<CR>" }
-	},
 	lazy = false,
 	---@module "oil"
 	---@type oil.SetupOpts
