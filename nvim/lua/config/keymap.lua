@@ -36,7 +36,6 @@ vim.keymap.set("n", "<Space>fc", ":FzfLua files cwd=" .. vim.fn.stdpath("config"
 vim.keymap.set("n", "<Space>fg", ":FzfLua live_grep_native<CR>")
 vim.keymap.set("n", "<Space>fh", ":FzfLua helptags<CR>")
 vim.keymap.set("n", "<Space>fr", ":FzfLua registers<CR>")
-vim.keymap.set("n", "<Space>fe", function() Snacks.explorer() end)
 
 -- Git Keymaps
 vim.keymap.set("n", "<Space>gc", ":FzfLua git_bcommits<CR>")
