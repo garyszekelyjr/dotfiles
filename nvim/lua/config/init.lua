@@ -3,10 +3,15 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 		vim.lsp.buf.format({ bufnr = args.buf })
 	end
 })
+
 vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()
 		vim.highlight.on_yank({ timeout = 300 })
 	end
+})
+
+vim.api.nvim_create_autocmd("VimEnter", {
+	command = "Outline!"
 })
 
 vim.cmd.colorscheme("tokyonight-moon")
