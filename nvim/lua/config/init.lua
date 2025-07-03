@@ -10,10 +10,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end
 })
 
-vim.api.nvim_create_autocmd("VimEnter", {
-	command = "Outline!"
-})
-
 vim.cmd.colorscheme("tokyonight-moon")
 
 vim.filetype.add({
