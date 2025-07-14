@@ -10,7 +10,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end
 })
 
-vim.cmd.colorscheme("tokyonight-moon")
+vim.cmd.colorscheme("catppuccin-mocha")
 
 vim.filetype.add({
 	filename = {
@@ -20,9 +20,4 @@ vim.filetype.add({
 })
 
 require("config.keymap")
-
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-vim.opt.foldlevelstart = 99
-vim.opt.foldmethod = "expr"
-vim.opt.foldtext = ""
-vim.opt.relativenumber = true
+require("config.opt")

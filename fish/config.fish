@@ -13,7 +13,7 @@ end
 function venv --on-variable PWD
     set venv ./.venv
     if test -d $venv
-        source $venv/bin/activate.fish
+        source "$venv/bin/activate.fish"
     else if type -q deactivate
         deactivate
     end
