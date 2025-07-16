@@ -8,7 +8,7 @@ config.font_size = 14
 config.default_cursor_style = "SteadyBar"
 
 -- ON WINDOWS
-if package.config:sub(1,1) == "\\" then
+if package.config:sub(1, 1) == "\\" then
 	config.font_size = 10
 	config.default_prog = { 'pwsh.exe' }
 end
