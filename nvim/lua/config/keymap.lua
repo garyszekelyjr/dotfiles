@@ -11,8 +11,6 @@ vim.keymap.set("n", "-", ":Oil --float<CR>")
 -- Quick List Keymaps
 Harpoon = require("harpoon")
 vim.keymap.set("n", "<Space>ha", function() Harpoon:list():add() end)
-vim.keymap.set("n", "<Space>hr", function() Harpoon:list():remove() end)
-vim.keymap.set("n", "<Space>hc", function() Harpoon:list():clear() end)
 vim.keymap.set("n", "<Space>hl", function() Harpoon.ui:toggle_quick_menu(Harpoon:list()) end)
 vim.keymap.set("n", "<Space>h1", function() Harpoon:list():select(1) end)
 vim.keymap.set("n", "<Space>h2", function() Harpoon:list():select(2) end)

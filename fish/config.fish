@@ -19,6 +19,6 @@ function venv --on-variable PWD
     end
 end
 
-venv
-
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar"
+
+venv
