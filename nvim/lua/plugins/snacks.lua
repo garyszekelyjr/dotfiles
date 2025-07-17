@@ -7,6 +7,7 @@ return {
 		bufdelete = { enabled = true },
 		-- dashboard = {},
 		git = { enabled = true },
+		image = { enabled = true },
 		indent = {
 			enabled = true,
 			chunk = {
