@@ -1,6 +1,8 @@
 Set-Alias -Name grep -Value Select-String
 Set-Alias -Name whereis -Value Get-Command
 
+$PSStyle.FileInfo.Directory = ""
+
 function sgit {
     param(
         [string]$command,
