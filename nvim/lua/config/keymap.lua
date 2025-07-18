@@ -38,7 +38,6 @@ vim.keymap.set("n", "<Space>fr", ":FzfLua registers<CR>")
 -- Git Keymaps
 vim.keymap.set("n", "<Space>gc", ":FzfLua git_bcommits<CR>")
 vim.keymap.set("n", "<Space>gs", ":FzfLua git_status<CR>")
-vim.keymap.set("n", "<Space>gd", ":Gdiffsplit<CR>")
 
 -- Diagnostics Keymaps
 vim.keymap.set("n", "<Space>xx", ":Trouble diagnostics toggle<CR>")
