@@ -26,7 +26,19 @@ return {
 			jdtls = {},
 			jsonls = {},
 			lemminx = {},
-			lua_ls = {},
+			lua_ls = {
+				settings = {
+					Lua = {
+						format = {
+							enable = true,
+							defaultConfig = {
+								quote_style = "double"
+							}
+						}
+					}
+				}
+
+			},
 			metals = {},
 			nixd = {},
 			nushell = {},

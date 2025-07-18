@@ -1,4 +1,4 @@
 return {
-	'hedyhli/outline.nvim',
+	"hedyhli/outline.nvim",
 	opts = {}
 }
