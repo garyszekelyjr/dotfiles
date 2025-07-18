@@ -6,6 +6,7 @@ return {
 	---@type oil.SetupOpts
 	opts = {
 		columns = { "icon", "permissions", "size", "mtime" },
+		constrain_cursor = "name",
 		default_file_explorer = true,
 		delete_to_trash = true,
 		keymaps = {
