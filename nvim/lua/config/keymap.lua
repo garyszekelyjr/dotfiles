@@ -23,9 +23,8 @@ vim.keymap.set("n", "<Space>h8", function() Harpoon:list():select(8) end)
 vim.keymap.set("n", "<Space>h9", function() Harpoon:list():select(9) end)
 
 -- Buffer Keymaps
-vim.keymap.set("n", "<C-w>a", function() Snacks.bufdelete.all() end)
-vim.keymap.set("n", "<C-w>x", function() Snacks.bufdelete.delete() end)
-vim.keymap.set("n", "<C-w>o", function() Snacks.bufdelete.other() end)
+vim.keymap.set("n", "<C-w>a", ":%bd<CR>")
+vim.keymap.set("n", "<C-w>x", ":bd<CR>")
 
 -- Finder Keymaps
 vim.keymap.set("n", "<Space>fb", ":FzfLua buffers<CR>")
@@ -36,8 +35,10 @@ vim.keymap.set("n", "<Space>fh", ":FzfLua helptags<CR>")
 vim.keymap.set("n", "<Space>fr", ":FzfLua registers<CR>")
 
 -- Git Keymaps
+Snacks = require("snacks")
 vim.keymap.set("n", "<Space>gc", ":FzfLua git_bcommits<CR>")
 vim.keymap.set("n", "<Space>gs", ":FzfLua git_status<CR>")
+vim.keymap.set("n", "<Space>gb", function() Snacks.git.blame_line({ count = 1 }) end)
 
 -- Diagnostics Keymaps
 vim.keymap.set("n", "<Space>xx", ":Trouble diagnostics toggle<CR>")
