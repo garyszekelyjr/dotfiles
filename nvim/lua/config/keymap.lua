@@ -3,11 +3,10 @@ vim.keymap.set("n", "<Leader>\\", ":vsplit<CR>")
 vim.keymap.set("n", "<Leader>-", ":split<CR>")
 
 -- Outline Keymaps
-vim.keymap.set("n", "<Space>o", ":Outline!<CR>")
+vim.keymap.set("n", "<Space>o", ":topleft Outline!<CR>")
 
 -- File Explorer Keymaps
 vim.keymap.set("n", "-", ":Oil --float<CR>")
-vim.keymap.set("n", "<Space>t", ":Neotree toggle<CR>")
 
 -- Quick List Keymaps
 Harpoon = require("harpoon")
