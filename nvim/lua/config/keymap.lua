@@ -7,6 +7,7 @@ vim.keymap.set("n", "<Space>o", ":Outline!<CR>")
 
 -- File Explorer Keymaps
 vim.keymap.set("n", "-", ":Oil --float<CR>")
+vim.keymap.set("n", "<Space>t", ":Neotree toggle<CR>")
 
 -- Quick List Keymaps
 Harpoon = require("harpoon")
