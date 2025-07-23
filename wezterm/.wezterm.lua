@@ -4,19 +4,19 @@ local config = wezterm.config_builder()
 
 config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font("JetBrains Mono")
-config.font_size = 13
+config.font_size = 14
 config.default_cursor_style = "SteadyBar"
 
 -- ON WINDOWS
 if package.config:sub(1, 1) == "\\" then
 	config.font_size = 10
-	config.default_prog = { 'pwsh.exe' }
+	config.default_prog = { "pwsh.exe" }
 end
 
 
 config.leader = {
-	key = 'Space',
-	mods = 'CTRL',
+	key = "Space",
+	mods = "CTRL",
 	timeout_milliseconds = 2000
 }
 
@@ -42,33 +42,33 @@ config.keys = {
 		action = wezterm.action.SplitVertical {}
 	},
 	{
-		key = 'LeftArrow',
-		mods = 'LEADER',
-		action = wezterm.action.ActivatePaneDirection 'Left',
+		key = "LeftArrow",
+		mods = "LEADER",
+		action = wezterm.action.ActivatePaneDirection "Left",
 	},
 	{
-		key = 'RightArrow',
-		mods = 'LEADER',
-		action = wezterm.action.ActivatePaneDirection 'Right',
+		key = "RightArrow",
+		mods = "LEADER",
+		action = wezterm.action.ActivatePaneDirection "Right",
 	},
 	{
-		key = 'UpArrow',
-		mods = 'LEADER',
-		action = wezterm.action.ActivatePaneDirection 'Up',
+		key = "UpArrow",
+		mods = "LEADER",
+		action = wezterm.action.ActivatePaneDirection "Up",
 	},
 	{
-		key = 'DownArrow',
-		mods = 'LEADER',
-		action = wezterm.action.ActivatePaneDirection 'Down',
+		key = "DownArrow",
+		mods = "LEADER",
+		action = wezterm.action.ActivatePaneDirection "Down",
 	},
 	{
-		key = '[',
-		mods = 'LEADER',
+		key = "[",
+		mods = "LEADER",
 		action = wezterm.action.MoveTabRelative(-1)
 	},
 	{
-		key = ']',
-		mods = 'LEADER',
+		key = "]",
+		mods = "LEADER",
 		action = wezterm.action.MoveTabRelative(1)
 	}
 
