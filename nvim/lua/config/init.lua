@@ -1,5 +1,6 @@
 require("config.autocmd")
 require("config.colorscheme")
+require("config.command")
 require("config.filetype")
 require("config.keymap")
 require("config.opt")
