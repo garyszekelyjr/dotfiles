@@ -3,6 +3,7 @@ return {
 	build = ":TSUpdate",
 	opts = {
 		parsers = {
+			"bash",
 			"css",
 			"dockerfile",
 			"fish",

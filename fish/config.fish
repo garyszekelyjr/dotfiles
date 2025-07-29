@@ -23,6 +23,11 @@ function .
     cd ~/repos/dotfiles/
 end
 
-export JDTLS_JVM_ARGS="-javaagent:$HOME/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar"
+if test -e "$HOME/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar"
+    export JDTLS_JVM_ARGS="-javaagent:$HOME/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar"
+else
+
+    export JDTLS_JVM_ARGS=""
+end
 
 venv
