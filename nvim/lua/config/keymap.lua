@@ -3,7 +3,11 @@ vim.keymap.set("n", "<Space>\\", ":vsplit<CR>")
 vim.keymap.set("n", "<Space>-", ":split<CR>")
 
 -- Comment Keymaps
-vim.keymap.set({ "n", "v" }, "<C-/>", ":Comment<CR>")
+if package.config:sub(1, 1) == "\\" then
+	vim.keymap.set({ "n", "v" }, "<C-\\>", ":Comment<CR>")
+else
+	vim.keymap.set({ "n", "v" }, "<C-/>", ":Comment<CR>")
+end
 
 -- File Explorer Keymaps
 vim.keymap.set("n", "-", ":Oil --float<CR>")
