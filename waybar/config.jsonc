@@ -1,0 +1,38 @@
+// -*- mode: jsonc -*-
+{
+	"position": "bottom",
+	"height": 30,
+	"spacing": 0,
+	"include": [
+		"~/.config/waybar/backlight.jsonc",
+		"~/.config/waybar/battery.jsonc",
+		"~/.config/waybar/bluetooth.jsonc",
+		"~/.config/waybar/clock.jsonc",
+		"~/.config/waybar/custom-power.jsonc",
+		"~/.config/waybar/idle_inhibitor.jsonc",
+		"~/.config/waybar/keyboard-state.jsonc",
+		"~/.config/waybar/network.jsonc",
+		"~/.config/waybar/tray.jsonc",
+		"~/.config/waybar/scratchpad.jsonc",
+		"~/.config/waybar/wireplumber.jsonc"
+	],
+	"modules-left": [
+		"custom/power",
+		"sway/workspaces",
+		"sway/scratchpad"
+	],
+	"modules-center": [
+		"sway/window"
+	],
+	"modules-right": [
+		"tray",
+		"idle_inhibitor",
+		"network",
+		"bluetooth",
+		"wireplumber",
+		"backlight",
+		"keyboard-state",
+		"battery",
+		"clock"
+	]
+}

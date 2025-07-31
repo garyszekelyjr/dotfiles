@@ -1,0 +1,14 @@
+{
+	"wireplumber": {
+		"format": "{volume}% {icon} ",
+		"format-icons": [
+			"\uf026",
+			"\uf027",
+			// "\uf6a8",
+			"\uf028"
+		],
+		"format-muted": "\uf6a9",
+		"on-click": "wezterm start -- pulsemixer",
+		"on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+	}
+}
