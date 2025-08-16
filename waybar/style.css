@@ -1,6 +1,6 @@
 * {
 	/* `otf-font-awesome` is required to be installed for icons */
-	font-family: JetBrainsMono;
+	font-family: JetBrainsMonoNerdFont, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
 	font-size: 12px;
 }
 
@@ -21,7 +21,6 @@ button {
 }
 
 #workspaces button {
-	padding: 0 5px;
 	background-color: transparent;
 	color: #cdd6f4;
 }
@@ -45,7 +44,6 @@ button {
 #network,
 #wireplumber,
 #tray,
-#idle_inhibitor,
 #idle_inhibitor.activated,
 #bluetooth,
 #keyboard-state,
@@ -89,6 +87,7 @@ button {
 }
 
 #idle_inhibitor {
+	padding: 0 10px;
 	background-color: transparent;
 	color: #cdd6f4;
 }

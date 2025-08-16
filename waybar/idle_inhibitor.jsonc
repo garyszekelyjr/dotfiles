@@ -2,8 +2,8 @@
 	"idle_inhibitor": {
 		"format": "{icon}",
 		"format-icons": {
-			"activated": "",
-			"deactivated": ""
+			"activated": "\uf06e",
+			"deactivated": "\uf070"
 		}
 	}
 }

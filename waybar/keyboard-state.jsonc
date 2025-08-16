@@ -5,8 +5,8 @@
 		"justify": "center",
 		"format": "{name} {icon}",
 		"format-icons": {
-			"locked": "",
-			"unlocked": ""
+			"locked": "\uf023",
+			"unlocked": "\uf09c"
 		}
 	}
 }

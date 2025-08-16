@@ -1,6 +1,6 @@
 {
 	"bluetooth": {
-		"on-click": "wezterm start -- bluetui",
+		"on-click": "foot bluetui",
 		"on-click-right": "bluetoothctl power $(bluetoothctl show | grep -q 'Powered: yes' && echo off || echo on)"
 	}
 }

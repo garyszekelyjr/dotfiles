@@ -19,7 +19,7 @@ function venv --on-variable PWD
     end
 end
 
-function .
+function dot
     cd ~/repos/dotfiles/
 end
 
@@ -29,5 +29,7 @@ else
 
     export JDTLS_JVM_ARGS=""
 end
+
+# export LD_LIBRARY_PATH=$NIX_LD_LIBRARY_PATH
 
 venv
