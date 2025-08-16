@@ -20,7 +20,7 @@ function venv --on-variable PWD
 end
 
 function dot
-    cd ~/repos/dotfiles/
+    cd ~/dotfiles/
 end
 
 if test -e "$HOME/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar"
