@@ -1,4 +1,8 @@
 return {
 	"nvim-tree/nvim-tree.lua",
-	opts = {}
+	opts = {
+		view = {
+			width = "20%",
+		}
+	}
 }

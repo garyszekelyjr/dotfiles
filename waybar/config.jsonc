@@ -10,7 +10,6 @@
 		"~/.config/waybar/clock.jsonc",
 		"~/.config/waybar/custom-power.jsonc",
 		"~/.config/waybar/idle_inhibitor.jsonc",
-		"~/.config/waybar/keyboard-state.jsonc",
 		"~/.config/waybar/network.jsonc",
 		"~/.config/waybar/tray.jsonc",
 		"~/.config/waybar/scratchpad.jsonc",
@@ -22,16 +21,15 @@
 		"sway/scratchpad"
 	],
 	"modules-center": [
-		"sway/window"
+		"sway/window",
+		"idle_inhibitor"
 	],
 	"modules-right": [
 		"tray",
-		"idle_inhibitor",
 		"network",
 		"bluetooth",
 		"wireplumber",
 		"backlight",
-		"keyboard-state",
 		"battery",
 		"clock"
 	]
