@@ -39,6 +39,7 @@ return {
 				}
 
 			},
+			marksman = {},
 			metals = {},
 			nixd = {},
 			nushell = {},

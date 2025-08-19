@@ -31,6 +31,10 @@ function sgit {
     }
 }
 
+function dot {
+	cd ~/dotfiles
+}
+
 Remove-Alias -Name cd
 
 function cd {
