@@ -1,4 +1,8 @@
 return {
 	"hedyhli/outline.nvim",
-	opts = {}
+	opts = {
+		outline_window = {
+			auto_jump = true
+		}
+	}
 }

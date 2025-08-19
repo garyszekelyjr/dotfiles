@@ -23,6 +23,14 @@ function dot
     cd ~/dotfiles/
 end
 
+function nvim
+    if test -e ".nix-profile"
+        nix develop --profile .nix-profile --command /run/current-system/sw/bin/nvim
+    else
+        /run/current-system/sw/bin/nvim $argv
+    end
+end
+
 if test -e "$HOME/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar"
     export JDTLS_JVM_ARGS="-javaagent:$HOME/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar"
 else

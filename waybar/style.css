@@ -1,8 +1,7 @@
 * {
-	/* `otf-font-awesome` is required to be installed for icons */
 	border: none;
 	border-radius: 0;
-	font-family: 'JetBrainsMonoNerdFontPropo';
+	font-family: JetBrainsMonoNerdFontPropo, "Font Awesome 6 Pro Solid";
 	font-size: 12px;
 }
 
@@ -78,6 +77,7 @@ window#waybar {
 	min-width: 100px;
 }
 
-#window {
-	margin-right: 5px;
+#idle_inhibitor {
+	min-width: 15px;
+	margin-left: 5px;
 }

@@ -40,6 +40,5 @@ vim.keymap.set("n", "<C-w>a", ":%bd<CR>")
 
 -- Plugin Keymaps
 vim.keymap.set("n", "<Space>o", ":Outline!<CR>")
-vim.keymap.set("n", "<Space>t", ":NvimTreeToggle<CR>")
 vim.keymap.set("n", "<Space>p", ":RenderMarkdown buf_toggle<CR>")
 vim.keymap.set("n", "<Space>x", ":Trouble diagnostics toggle<CR>")

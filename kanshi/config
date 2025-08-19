@@ -22,7 +22,7 @@ profile home_1 {
 }
 
 profile home_2 {
-	output $INTERNAL enable position 0,0
+	output $INTERNAL enable position 0,0 
   	output $ZSC enable position 1280,0
 }
 
