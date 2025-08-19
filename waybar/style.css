@@ -69,7 +69,10 @@ window#waybar {
 	color: #313244;
 }
 
-#clock,
+#clock {
+	min-width: 200px;
+}
+
 #network,
 #bluetooth,
 #battery,

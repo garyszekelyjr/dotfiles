@@ -97,8 +97,8 @@ bar {
     swaybar_command waybar
 }
 
-exec_always systemctl --user restart kanshi.service
-exec_always systemctl --user restart cycle-bg.service
+exec_always systemctl --user restart kanshid.service
+exec_always systemctl --user restart bg.service
 
 exec swayidle -w before-sleep 'swaylock -f'
 

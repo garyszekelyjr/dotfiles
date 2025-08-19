@@ -1,6 +1,17 @@
 {
 	"clock": {
-		"format": "{:%H:%M \uf017  %m-%d-%Y \uf133}",
-		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+		"format": "{:%R \uf017  %F \uf133  %Z}",
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"timezones": [
+			"",
+			"US/Pacific",
+			"US/Mountain",
+			"US/Central",
+			"US/Eastern",
+			"Europe/Berlin"
+		],
+		"actions": {
+			"on-click": "tz_up"
+		}
 	}
 }

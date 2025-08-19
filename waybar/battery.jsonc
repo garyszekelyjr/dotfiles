@@ -1,9 +1,9 @@
 {
 	"battery": {
 		"format": "{capacity}% {icon}",
+		"format-charging": "{capacity}% {icon}",
 		"format-full": "{capacity}% {icon}",
-		"format-charging": "{capacity}% \uf5e7",
-		"format-plugged": "{capacity}% \uf1e6",
+		"format-plugged": "\uf1e6",
 		"format-alt": "{time} {icon}",
 		"format-icons": [
 			"\uf244",
