@@ -1,0 +1,9 @@
+#custom-wireguard {
+	background-color: #313244;
+	padding: 0 10px;
+	min-width: 25px;
+}
+
+#custom-wireguard.on {
+	background-color: #88171a;
+}

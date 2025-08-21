@@ -1,6 +1,7 @@
 set DIR ( realpath (status dirname) )
 
 rm -rf $HOME/.config/fish
+rm -rf $HOME/.config/foot
 rm -rf $HOME/.config/kanshi
 rm -rf $HOME/.config/nvim
 rm -rf $HOME/.config/sway
@@ -11,6 +12,7 @@ rm -rf $HOME/.tmux.conf
 rm -rf $HOME/.wezterm.lua
 
 ln -s $DIR/fish $HOME/.config/fish
+ln -s $DIR/foot $HOME/.config/foot
 ln -s $DIR/kanshi $HOME/.config/kanshi
 ln -s $DIR/nvim $HOME/.config/nvim
 ln -s $DIR/sway $HOME/.config/sway

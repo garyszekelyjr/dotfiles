@@ -1,0 +1,15 @@
+#bluetooth {
+	background-color: #313244;
+	min-width: 25px;
+	padding: 0 10px;
+}
+
+#bluetooth.on {
+	background-color: #a6e3a1;
+	color: #313244;
+}
+
+#bluetooth.connected {
+	background-color: #89b4fa;
+	color: #313244;
+}

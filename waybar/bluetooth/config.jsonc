@@ -1,5 +1,6 @@
 {
 	"bluetooth": {
+		"format": "\uf294",
 		"on-click": "foot bluetui",
 		"on-click-right": "bluetoothctl power $(bluetoothctl show | grep -q 'Powered: yes' && echo off || echo on)"
 	}

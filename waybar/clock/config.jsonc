@@ -11,7 +11,8 @@
 			"Europe/Berlin"
 		],
 		"actions": {
-			"on-click": "tz_up"
+			"on-click": "tz_up",
+			"on-click-right": "tz_down"
 		}
 	}
 }

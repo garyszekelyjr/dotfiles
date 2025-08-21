@@ -1,86 +1,25 @@
+@import url("file:///home/gszekely/.config/waybar/backlight/style.css");
+@import url("file:///home/gszekely/.config/waybar/battery/style.css");
+@import url("file:///home/gszekely/.config/waybar/bluetooth/style.css");
+@import url("file:///home/gszekely/.config/waybar/clock/style.css");
+@import url("file:///home/gszekely/.config/waybar/custom/nordvpn/style.css");
+@import url("file:///home/gszekely/.config/waybar/custom/power/style.css");
+@import url("file:///home/gszekely/.config/waybar/custom/wireguard/style.css");
+@import url("file:///home/gszekely/.config/waybar/idle_inhibitor/style.css");
+@import url("file:///home/gszekely/.config/waybar/network/style.css");
+@import url("file:///home/gszekely/.config/waybar/scratchpad/style.css");
+@import url("file:///home/gszekely/.config/waybar/tray/style.css");
+@import url("file:///home/gszekely/.config/waybar/wireplumber/style.css");
+@import url("file:///home/gszekely/.config/waybar/workspaces/style.css");
+
 * {
 	border: none;
 	border-radius: 0;
 	font-family: JetBrainsMonoNerdFontPropo, "Font Awesome 6 Pro Solid";
-	font-size: 12px;
+	font-size: 13px;
 }
 
-window#waybar {
+#waybar {
+	color: #cdd6f4;
 	background-color: #1e1e2e;
-	color: #cdd6f4;
-	transition-property: background-color;
-	transition-duration: .5s;
-}
-
-#clock,
-#battery,
-#backlight,
-#network,
-#wireplumber,
-#tray,
-#idle_inhibitor,
-#idle_inhibitor.activated,
-#bluetooth,
-#keyboard-state,
-#scratchpad,
-#custom-power,
-#workspaces button {
-	padding: 0 10px;
-	background-color: #313244;
-	color: #cdd6f4;
-}
-
-#idle_inhibitor,
-#tray {
-	background-color: transparent;
-}
-
-#workspaces button.urgent,
-#network.disconnected {
-	background-color: #f38ba8;
-}
-
-#workspaces button.focused {
-	background-color: #cdd6f4;
-	color: #1e1e2e;
-}
-
-#network,
-#battery.charging,
-#battery.plugged,
-#bluetooth.on {
-	background-color: #a6e3a1;
-	color: #313244;
-}
-
-#bluetooth.connected {
-	background-color: #89b4fa;
-	color: #313244;
-}
-
-#battery.warning {
-	background-color: #f9e2af;
-	color: #313244;
-}
-
-#battery.critical,
-#wireplumber.muted {
-	background-color: #f38ba8;
-	color: #313244;
-}
-
-#clock {
-	min-width: 200px;
-}
-
-#network,
-#bluetooth,
-#battery,
-#wireplumber {
-	min-width: 100px;
-}
-
-#idle_inhibitor {
-	min-width: 15px;
-	margin-left: 5px;
 }

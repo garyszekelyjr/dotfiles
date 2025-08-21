@@ -1,0 +1,21 @@
+#battery {
+	background-color: #313244;
+	color: #cdd6f4;
+	min-width: 50px;
+	padding: 0 10px;
+}
+
+#battery.charging {
+	background-color: #a6e3a1;
+	color: #313244;
+}
+
+#battery.warning {
+	background-color: #f9e2af;
+	color: #313244;
+}
+
+#battery.critical {
+	background-color: #f38ba8;
+	color: #313244;
+}

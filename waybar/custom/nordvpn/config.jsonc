@@ -1,0 +1,15 @@
+{
+	"custom/nordvpn": {
+		"format": "{icon}",
+		"exec": "sh $HOME/.config/waybar/custom/nordvpn/nordvpn.sh",
+		"interval": 60,
+		"return-type": "json",
+		"format-icons": [
+			"\uf09c",
+			"\uf023"
+		],
+		"on-click": "systemctl start nordvpnd.service",
+		"on-click-right": "systemctl stop nordvpnd.service",
+		"tooltip": false
+	}
+}

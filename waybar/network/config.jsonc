@@ -1,0 +1,10 @@
+{
+	"network": {
+		"format-wifi": "\uf1eb {signalStrength}%",
+		"format-ethernet": "\uf796",
+		"format-linked": "\uf796",
+		"format-disconnected": "\uf071",
+		"tooltip-format": "{ipaddr}/{cidr}",
+		"on-click": "foot sudo nmtui"
+	}
+}

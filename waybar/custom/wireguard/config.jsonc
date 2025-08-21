@@ -1,0 +1,15 @@
+{
+	"custom/wireguard": {
+		"format": "{icon}",
+		"exec": "sh $HOME/.config/waybar/custom/wireguard/wireguard.sh",
+		"interval": 60,
+		"return-type": "json",
+		"format-icons": [
+			"\uf09c",
+			"\uf023"
+		],
+		"on-click": "systemctl start wireguard-wg0.service",
+		"on-click-right": "systemctl stop wireguard-wg0.service",
+		"tooltip": false
+	}
+}

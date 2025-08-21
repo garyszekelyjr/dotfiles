@@ -4,16 +4,18 @@
 	"height": 30,
 	"spacing": 0,
 	"include": [
-		"~/.config/waybar/backlight.jsonc",
-		"~/.config/waybar/battery.jsonc",
-		"~/.config/waybar/bluetooth.jsonc",
-		"~/.config/waybar/clock.jsonc",
-		"~/.config/waybar/custom-power.jsonc",
-		"~/.config/waybar/idle_inhibitor.jsonc",
-		"~/.config/waybar/network.jsonc",
-		"~/.config/waybar/tray.jsonc",
-		"~/.config/waybar/scratchpad.jsonc",
-		"~/.config/waybar/wireplumber.jsonc"
+		"~/.config/waybar/backlight/config.jsonc",
+		"~/.config/waybar/battery/config.jsonc",
+		"~/.config/waybar/bluetooth/config.jsonc",
+		"~/.config/waybar/clock/config.jsonc",
+		"~/.config/waybar/custom/power/config.jsonc",
+		"~/.config/waybar/custom/nordvpn/config.jsonc",
+		"~/.config/waybar/custom/wireguard/config.jsonc",
+		"~/.config/waybar/idle_inhibitor/config.jsonc",
+		"~/.config/waybar/network/config.jsonc",
+		"~/.config/waybar/scratchpad/config.jsonc",
+		"~/.config/waybar/tray/config.jsonc",
+		"~/.config/waybar/wireplumber/config.jsonc"
 	],
 	"modules-left": [
 		"custom/power",
@@ -26,6 +28,8 @@
 	],
 	"modules-right": [
 		"tray",
+		"custom/wireguard",
+		"custom/nordvpn",
 		"network",
 		"bluetooth",
 		"wireplumber",

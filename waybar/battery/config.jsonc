@@ -4,7 +4,6 @@
 		"format-charging": "{capacity}% {icon}",
 		"format-full": "{capacity}% {icon}",
 		"format-plugged": "\uf1e6",
-		"format-alt": "{time} {icon}",
 		"format-icons": [
 			"\uf244",
 			"\uf243",
@@ -13,8 +12,8 @@
 			"\uf240"
 		],
 		"states": {
-			"warning": 30,
-			"critical": 10
+			"critical": 10,
+			"warning": 30
 		}
 	}
 }

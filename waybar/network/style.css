@@ -1,0 +1,10 @@
+#network {
+	background-color: #a6e3a1;
+	color: #313244;
+	min-width: 50px;
+	padding: 0 10px;
+}
+
+#network.disconnected {
+	background-color: #f38ba8;
+}

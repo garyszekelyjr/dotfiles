@@ -1,0 +1,9 @@
+#wireplumber {
+	background-color: #313244;
+	min-width: 75px;
+}
+
+#wireplumber.muted {
+	background-color: #f38ba8;
+	color: #313244;
+}
