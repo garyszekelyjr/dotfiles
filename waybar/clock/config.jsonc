@@ -1,6 +1,6 @@
 {
 	"clock": {
-		"format": "{:%R \uf017  %F \uf133  %Z}",
+		"format": "{:%F \uf133  %R %Z \uf017}",
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
 		"timezones": [
 			"",
