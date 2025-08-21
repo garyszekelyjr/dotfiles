@@ -1,5 +1,10 @@
-#custom-nordvpn.on {
-	background-color: #3E5FFF;
+#custom-nordvpn {
+	color: #3E5FFF;
 	min-width: 25px;
 	padding: 0 10px;
+}
+
+#custom-nordvpn.on {
+	background-color: #3E5FFF;
+	color: #cdd6f4;
 }
