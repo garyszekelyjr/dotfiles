@@ -26,6 +26,7 @@ return {
 			jdtls = {},
 			jsonls = {},
 			lemminx = {},
+			ltex_plus = {},
 			lua_ls = {
 				settings = {
 					Lua = {
