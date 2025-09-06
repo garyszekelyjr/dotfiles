@@ -3,8 +3,8 @@
 	padding: 0 10px;
 }
 
-#battery.charging {
-	background-color: #a6e3a1;
+#battery.critical {
+	background-color: #f38ba8;
 	color: #313244;
 }
 
@@ -13,7 +13,7 @@
 	color: #313244;
 }
 
-#battery.critical {
-	background-color: #f38ba8;
+#battery.charging {
+	background-color: #a6e3a1;
 	color: #313244;
 }

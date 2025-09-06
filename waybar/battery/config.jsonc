@@ -1,8 +1,8 @@
 {
 	"battery": {
 		"format": "{capacity}% {icon}",
-		"format-charging": "{capacity}% {icon}",
-		"format-full": "{capacity}% {icon}",
+		"format-charging": "{capacity}% \uf5e7",
+		"format-full": "100% {icon}",
 		"format-plugged": "\uf1e6",
 		"format-icons": [
 			"\uf244",

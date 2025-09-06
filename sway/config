@@ -22,7 +22,6 @@ bindsym $alt+2 exec firefox
 bindsym $alt+3 exec thunderbird
 bindsym $alt+4 exec delfin
 bindsym $alt+5 exec foot htop
-bindsym $alt+6 exec steam
 
 bindsym $alt+l exec swaylock -f -c 000000
 
