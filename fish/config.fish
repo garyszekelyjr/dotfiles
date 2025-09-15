@@ -24,8 +24,8 @@ function dot
 end
 
 function nvim
-    if test -e ".nix-profile"
-        nix develop --profile .nix-profile --command /run/current-system/sw/bin/nvim
+    if test -e "flake.nix"
+        nix develop --profile .nix-profile --command /run/current-system/sw/bin/nvim $argv
     else
         /run/current-system/sw/bin/nvim $argv
     end

@@ -17,11 +17,14 @@ bindsym $mod+Shift+q kill
 bindsym $alt+Space exec $menu
 
 bindsym $alt+b exec foot bluetui
+bindsym $alt+n exec foot sudo nmtui
+bindsym $alt+v exec foot pulsemixer
 bindsym $alt+1 exec nemo
 bindsym $alt+2 exec firefox
 bindsym $alt+3 exec thunderbird
 bindsym $alt+4 exec delfin
 bindsym $alt+5 exec foot htop
+bindsym $alt+6 exec foot nvtop
 
 bindsym $alt+l exec swaylock -f -c 000000
 
@@ -100,8 +103,8 @@ bar {
     swaybar_command waybar
 }
 
-exec_always systemctl --user restart kanshid.service
-exec_always systemctl --user restart bg.service
+exec_always systemctl --user restart kanshid
+exec_always systemctl --user restart bg
 
 exec swayidle -w \
 	timeout 300 'swaylock -f -c 000000' \
