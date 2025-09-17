@@ -5,8 +5,9 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term foot
+set $term kitty 
 set $menu wofi --show run
+set $cli $term
 
 workspace_layout tabbed
 
@@ -16,15 +17,15 @@ bindsym $mod+Shift+q kill
 
 bindsym $alt+Space exec $menu
 
-bindsym $alt+b exec foot bluetui
-bindsym $alt+n exec foot sudo nmtui
-bindsym $alt+v exec foot pulsemixer
+bindsym $alt+b exec $cli bluetui
+bindsym $alt+n exec $cli sudo nmtui
+bindsym $alt+v exec $cli pulsemixer
 bindsym $alt+1 exec nemo
 bindsym $alt+2 exec firefox
 bindsym $alt+3 exec thunderbird
 bindsym $alt+4 exec delfin
-bindsym $alt+5 exec foot htop
-bindsym $alt+6 exec foot nvtop
+bindsym $alt+5 exec $cli htop
+bindsym $alt+6 exec $cli nvtop
 
 bindsym $alt+l exec swaylock -f -c 000000
 
