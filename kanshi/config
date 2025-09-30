@@ -16,6 +16,18 @@ output "ZSC FHD HDR 8R33926O00QS" {
 	alias $ZSC
 }
 
+output "Dell Inc. DELL P2419H 3WTVYR2" {
+	mode 1920x1080
+	scale 1.00
+	alias $DELL1
+}
+
+output "Dell Inc. DELL P2419H 38VVYR2" {
+	mode 1920x1080
+	scale 1.00
+	alias $DELL2
+}
+
 profile home_1 {
 	output $INTERNAL enable position 0,0
 }
@@ -34,4 +46,20 @@ profile home_4 {
 	output $INTERNAL disable
   	output $DELL enable position 0,0
   	output $ZSC enable position 1920,0
+}
+
+profile home_5 {
+	output $INTERNAL disable
+  	output $DELL1 enable position 0,0
+  	output $DELL2 enable position 1920,0
+}
+
+profile home_6 {
+	output $INTERNAL disable
+  	output $DELL1 enable position 0,0
+}
+
+profile home_7 {
+	output $INTERNAL enable
+  	output $DELL2 enable position 0,0
 }

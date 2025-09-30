@@ -2,6 +2,7 @@
 	background-color: #a6e3a1;
 	color: #313244;
 	padding: 0 10px;
+	min-width: 60px;
 }
 
 #network.disconnected {

@@ -1,7 +1,7 @@
 // -*- mode: jsonc -*-
 {
-	"position": "bottom",
-	"height": 30,
+	"position": "top",
+	"height": 0,
 	"spacing": 0,
 	"include": [
 		"~/.config/waybar/backlight/config.jsonc",
@@ -18,16 +18,15 @@
 		"~/.config/waybar/wireplumber/config.jsonc"
 	],
 	"modules-left": [
-		"custom/power",
 		"sway/workspaces",
 		"sway/scratchpad"
 	],
 	"modules-center": [
-		"sway/window",
-		"idle_inhibitor"
+		"clock"
 	],
 	"modules-right": [
 		"tray",
+		"idle_inhibitor",
 		"custom/wireguard",
 		"custom/nordvpn",
 		"network",
@@ -35,6 +34,6 @@
 		"wireplumber",
 		"backlight",
 		"battery",
-		"clock"
+		"custom/power"
 	]
 }
