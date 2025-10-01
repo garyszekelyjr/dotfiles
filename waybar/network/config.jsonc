@@ -1,10 +1,15 @@
 {
 	"network": {
-		"format-wifi": "\uf1eb {signalStrength}%",
+		"format-wifi": "{signalStrength}% {icon}",
 		"format-ethernet": "\uf796",
 		"format-linked": "\uf796",
 		"format-disconnected": "\uf071",
 		"tooltip-format": "{ipaddr}/{cidr}",
-		"on-click": "foot sudo nmtui"
+		"on-click": "foot sudo nmtui",
+		"format-icons": [
+			"\uf6aa",
+			"\uf6ab",
+			"\uf1eb"
+		]
 	}
 }
