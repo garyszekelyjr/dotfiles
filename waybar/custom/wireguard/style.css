@@ -1,6 +1,7 @@
 #custom-wireguard {
 	color: #88171a;
 	padding: 0 10px;
+	min-width: 15px;
 }
 
 #custom-wireguard.on {

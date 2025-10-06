@@ -14,12 +14,13 @@
 
 * {
 	border: none;
-	border-radius: 0;
+	border-radius: 15px;
 	font-family: JetBrainsMonoNerdFontPropo, "Font Awesome 6 Pro Solid";
 	font-size: 13px;
+	margin: 2px;
 }
 
 #waybar {
 	color: #cdd6f4;
-	background-color: #1e1e2e;
+	background-color: transparent;
 }

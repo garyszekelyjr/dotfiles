@@ -1,6 +1,7 @@
 #workspaces button {
 	background-color: #313244;
 	color: #cdd6f4;
+	min-width: 15px;
 }
 
 #workspaces button.urgent {
