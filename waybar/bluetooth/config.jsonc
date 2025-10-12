@@ -1,8 +1,9 @@
 {
 	"bluetooth": {
 		"format": "\uf294",
-		"format-connected": "{device_battery_percentage}% \uf294",
-		"on-click": "foot bluetui",
+		"format-connected": "\uf294",
+		"tooltip-format": "{device_battery_percentage}%",
+		"on-click": "kitty bluetui",
 		"on-click-right": "bluetoothctl power $(bluetoothctl show | grep -q 'Powered: yes' && echo off || echo on)"
 	}
 }

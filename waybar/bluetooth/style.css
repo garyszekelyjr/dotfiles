@@ -1,7 +1,7 @@
 #bluetooth {
 	background-color: #313244;
 	padding: 0 10px;
-	min-width: 55px;
+	min-width: 15px;
 }
 
 #bluetooth.on {

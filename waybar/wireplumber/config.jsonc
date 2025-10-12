@@ -1,6 +1,6 @@
 {
 	"wireplumber": {
-		"format": "{volume}% {icon}",
+		"format": "{icon}",
 		"format-icons": [
 			"\uf026",
 			"\uf027",
@@ -8,7 +8,8 @@
 			"\uf028"
 		],
 		"format-muted": "\uf6a9",
-		"on-click": "foot pulsemixer",
-		"on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+		"tooltip-format": "{volume}%",
+		"on-click": "kitty pulsemixer",
+		"on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 	}
 }

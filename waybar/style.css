@@ -2,12 +2,12 @@
 @import url("file:///home/gszekely/.config/waybar/battery/style.css");
 @import url("file:///home/gszekely/.config/waybar/bluetooth/style.css");
 @import url("file:///home/gszekely/.config/waybar/clock/style.css");
+@import url("file:///home/gszekely/.config/waybar/custom/gopsuinfo/style.css");
 @import url("file:///home/gszekely/.config/waybar/custom/nordvpn/style.css");
 @import url("file:///home/gszekely/.config/waybar/custom/power/style.css");
 @import url("file:///home/gszekely/.config/waybar/custom/wireguard/style.css");
 @import url("file:///home/gszekely/.config/waybar/idle_inhibitor/style.css");
 @import url("file:///home/gszekely/.config/waybar/network/style.css");
-@import url("file:///home/gszekely/.config/waybar/scratchpad/style.css");
 @import url("file:///home/gszekely/.config/waybar/tray/style.css");
 @import url("file:///home/gszekely/.config/waybar/wireplumber/style.css");
 @import url("file:///home/gszekely/.config/waybar/workspaces/style.css");

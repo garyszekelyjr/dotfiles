@@ -8,3 +8,7 @@ vim.opt.foldlevel = 99
 -- Line Numbers
 vim.opt.relativenumber = true
 vim.opt.number = true
+
+-- Splitting
+vim.opt.splitright = true
+vim.opt.splitbelow = true

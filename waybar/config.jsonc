@@ -8,21 +8,25 @@
 		"~/.config/waybar/battery/config.jsonc",
 		"~/.config/waybar/bluetooth/config.jsonc",
 		"~/.config/waybar/clock/config.jsonc",
+		"~/.config/waybar/cpu/config.jsonc",
 		"~/.config/waybar/custom/power/config.jsonc",
+		"~/.config/waybar/custom/gopsuinfo/config.jsonc",
 		"~/.config/waybar/custom/nordvpn/config.jsonc",
 		"~/.config/waybar/custom/wireguard/config.jsonc",
 		"~/.config/waybar/idle_inhibitor/config.jsonc",
+		"~/.config/waybar/memory/config.jsonc",
 		"~/.config/waybar/network/config.jsonc",
-		"~/.config/waybar/scratchpad/config.jsonc",
 		"~/.config/waybar/tray/config.jsonc",
-		"~/.config/waybar/wireplumber/config.jsonc"
+		"~/.config/waybar/wireplumber/config.jsonc",
+		"~/.config/waybar/workspaces/config.jsonc"
 	],
 	"modules-left": [
-		"sway/workspaces",
-		"sway/scratchpad"
+		"hyprland/workspaces"
+		// "hyprland/scratchpad"
 	],
 	"modules-center": [
-		"clock"
+		"clock",
+		"custom/gopsuinfo"
 	],
 	"modules-right": [
 		"tray",
@@ -33,7 +37,7 @@
 		"bluetooth",
 		"wireplumber",
 		"backlight",
-		"battery"
-		// "custom/power"
+		"battery",
+		"custom/power"
 	]
 }

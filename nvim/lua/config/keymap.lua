@@ -1,6 +1,6 @@
 -- Base Vim Keymaps
-vim.keymap.set("n", "<Space>\\", ":vsplit<CR>")
-vim.keymap.set("n", "<Space>-", ":split<CR>")
+vim.keymap.set("n", "<Space>\\", ":vnew<CR>")
+vim.keymap.set("n", "<Space>-", ":new<CR>")
 
 -- Comment Keymaps
 if package.config:sub(1, 1) == "\\" then

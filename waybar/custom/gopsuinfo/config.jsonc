@@ -1,0 +1,8 @@
+{
+	"custom/gopsuinfo": {
+		"format": "{text}",
+		"exec": "gopsuinfo -c g",
+		"exec-if": "exit 0",
+		"interval": 1
+	}
+}
