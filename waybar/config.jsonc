@@ -4,21 +4,21 @@
 	"height": 0,
 	"spacing": 0,
 	"include": [
-		"~/.config/waybar/backlight/config.jsonc",
-		"~/.config/waybar/battery/config.jsonc",
-		"~/.config/waybar/bluetooth/config.jsonc",
-		"~/.config/waybar/clock/config.jsonc",
-		"~/.config/waybar/cpu/config.jsonc",
-		"~/.config/waybar/custom/power/config.jsonc",
-		"~/.config/waybar/custom/gopsuinfo/config.jsonc",
-		"~/.config/waybar/custom/nordvpn/config.jsonc",
-		"~/.config/waybar/custom/wireguard/config.jsonc",
-		"~/.config/waybar/idle_inhibitor/config.jsonc",
-		"~/.config/waybar/memory/config.jsonc",
-		"~/.config/waybar/network/config.jsonc",
-		"~/.config/waybar/tray/config.jsonc",
-		"~/.config/waybar/wireplumber/config.jsonc",
-		"~/.config/waybar/workspaces/config.jsonc"
+		"~/.config/waybar/modules/backlight.jsonc",
+		"~/.config/waybar/modules/battery.jsonc",
+		"~/.config/waybar/modules/bluetooth.jsonc",
+		"~/.config/waybar/modules/clock.jsonc",
+		"~/.config/waybar/modules/cpu.jsonc",
+		"~/.config/waybar/modules/custom/power/config.jsonc",
+		"~/.config/waybar/modules/custom/nordvpn/config.jsonc",
+		"~/.config/waybar/modules/custom/wireguard/config.jsonc",
+		"~/.config/waybar/modules/idle_inhibitor.jsonc",
+		"~/.config/waybar/modules/memory.jsonc",
+		"~/.config/waybar/modules/network.jsonc",
+		"~/.config/waybar/modules/temperature.jsonc",
+		"~/.config/waybar/modules/tray.jsonc",
+		"~/.config/waybar/modules/wireplumber.jsonc",
+		"~/.config/waybar/modules/workspaces.jsonc"
 	],
 	"modules-left": [
 		"hyprland/workspaces"
@@ -26,7 +26,9 @@
 	],
 	"modules-center": [
 		"clock",
-		"custom/gopsuinfo"
+		"cpu",
+		"temperature",
+		"memory"
 	],
 	"modules-right": [
 		"tray",
