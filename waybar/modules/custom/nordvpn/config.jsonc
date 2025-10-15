@@ -1,7 +1,7 @@
 {
 	"custom/nordvpn": {
 		"format": "{icon}",
-		"exec": "sh $HOME/.config/waybar/custom/nordvpn/nordvpn.sh",
+		"exec": "sh $HOME/.config/waybar/modules/custom/nordvpn/nordvpn.sh",
 		"interval": 60,
 		"return-type": "json",
 		"format-icons": [

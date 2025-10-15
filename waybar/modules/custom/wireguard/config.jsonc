@@ -1,7 +1,7 @@
 {
 	"custom/wireguard": {
 		"format": "{icon}",
-		"exec": "sh $HOME/.config/waybar/custom/wireguard/wireguard.sh",
+		"exec": "sh $HOME/.config/waybar/modules/custom/wireguard/wireguard.sh",
 		"interval": 60,
 		"return-type": "json",
 		"format-icons": [
