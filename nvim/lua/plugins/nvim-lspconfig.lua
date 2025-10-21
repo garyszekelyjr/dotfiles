@@ -23,6 +23,7 @@ return {
 			fish_lsp = {},
 			gopls = {},
 			html = {},
+			hyprls = {},
 			jdtls = {},
 			jsonls = {},
 			lemminx = {},

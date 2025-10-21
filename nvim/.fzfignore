@@ -7,3 +7,4 @@ target
 .pytest_cache
 node_modules
 .nix-profile*
+.zig-cache
