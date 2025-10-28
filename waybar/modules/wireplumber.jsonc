@@ -9,7 +9,7 @@
 		],
 		"format-muted": "\uf6a9",
 		"tooltip-format": "{volume}%",
-		"on-click": "kitty pulsemixer",
+		"on-click": "pavucontrol",
 		"on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 	}
 }

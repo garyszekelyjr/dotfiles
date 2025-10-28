@@ -23,21 +23,11 @@ function dot
     cd ~/dotfiles/
 end
 
-function nvim
-    if test -e "flake.nix"
-        nix develop --profile .nix-profile --command /run/current-system/sw/bin/nvim $argv
-    else
-        /run/current-system/sw/bin/nvim $argv
-    end
-end
-
 if test -e "$HOME/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar"
     export JDTLS_JVM_ARGS="-javaagent:$HOME/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar"
 else
 
     export JDTLS_JVM_ARGS=""
 end
-
-# export LD_LIBRARY_PATH=$NIX_LD_LIBRARY_PATH
 
 venv

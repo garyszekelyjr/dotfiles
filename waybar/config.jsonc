@@ -10,7 +10,6 @@
 		"~/.config/waybar/modules/clock.jsonc",
 		"~/.config/waybar/modules/cpu.jsonc",
 		"~/.config/waybar/modules/custom/power/config.jsonc",
-		"~/.config/waybar/modules/custom/nordvpn/config.jsonc",
 		"~/.config/waybar/modules/custom/wireguard/config.jsonc",
 		"~/.config/waybar/modules/idle_inhibitor.jsonc",
 		"~/.config/waybar/modules/memory.jsonc",

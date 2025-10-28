@@ -18,8 +18,7 @@ return {
 		lsps = {
 			bashls = {},
 			cssls = {},
-			docker_compose_language_service = {},
-			dockerls = {},
+			docker_language_server = {},
 			fish_lsp = {},
 			gopls = {},
 			html = {},
@@ -27,7 +26,7 @@ return {
 			jdtls = {},
 			jsonls = {},
 			lemminx = {},
-			ltex_plus = {},
+			ltex = {},
 			lua_ls = {
 				settings = {
 					Lua = {
