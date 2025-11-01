@@ -1,8 +1,6 @@
 #!/bin/bash
 
-SERVICE_NAME="wireguard-wg0"
-
-systemctl is-active --quiet "$SERVICE_NAME"
+wg show wg0 >/dev/null 2>&1
 
 if [ $? -eq 0 ]; then
   echo '{"class": "on", "percentage": 100}'

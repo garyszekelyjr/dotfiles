@@ -31,9 +31,8 @@
 	],
 	"modules-right": [
 		"tray",
-		"idle_inhibitor",
 		"custom/wireguard",
-		"custom/nordvpn",
+		"idle_inhibitor",
 		"network",
 		"bluetooth",
 		"wireplumber",
