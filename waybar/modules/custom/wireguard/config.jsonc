@@ -8,8 +8,6 @@
 			"\uf09c",
 			"\uf023"
 		],
-		"on-click": "wg-quick up wg0",
-		"on-click-right": "wg-quick down wg0",
 		"tooltip": false
 	}
 }
