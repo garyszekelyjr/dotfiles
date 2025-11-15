@@ -26,7 +26,7 @@ profile home_2 {
 }
 
 profile home_3 {
-	output $INTERNAL disable
+	output $INTERNAL enable position 0,1080
   	output $DELL enable position 0,0
 }
 
