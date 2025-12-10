@@ -5,7 +5,7 @@ function sgit
         case sc
             git add .
             git commit -m $argv[2]
-        case '*'
+        case "*"
             git $argv
     end
 end
@@ -20,14 +20,22 @@ function venv --on-variable PWD
 end
 
 function dot
-    cd ~/dotfiles/
+    cd $HOME/dotfiles
 end
 
-if test -e "$HOME/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar"
-    export JDTLS_JVM_ARGS="-javaagent:$HOME/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar"
+function fish_prompt
+    printf "%s%s%s%s> " (set_color $fish_color_cwd) (prompt_pwd) (set_color normal) (fish_git_prompt)
+end
+
+if test -e $HOME/.m2/repository/org/projectlombok/lombok/1.18.42/
+    set JDTLS_JVM_ARGS -javaagent:$HOME/.m2/repository/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar
 else
 
-    export JDTLS_JVM_ARGS=""
+    set JDTLS_JVM_ARGS ""
 end
 
+set -g fish_prompt_pwd_dir_length 0
+
 venv
+
+export EDITOR=nvim
