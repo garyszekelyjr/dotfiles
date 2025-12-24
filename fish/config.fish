@@ -39,3 +39,5 @@ set -g fish_prompt_pwd_dir_length 0
 venv
 
 export EDITOR=nvim
+
+pyenv init - fish | source
