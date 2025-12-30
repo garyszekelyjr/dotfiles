@@ -1,5 +1,5 @@
 -- File Explorer Keymaps
-vim.keymap.set("n", "<Space>-", ":Oil --float<CR>")
+vim.keymap.set("n", "<Space>-", ":Oil<CR>")
 
 -- Buffer Keymaps
 vim.keymap.set("n", "<Space>dx", ":bd<CR>")
