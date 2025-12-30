@@ -1,7 +1,12 @@
 Set-Alias -Name grep -Value Select-String
-Set-Alias -Name whereis -Value Get-Command
 
 $PSStyle.FileInfo.Directory = ""
+
+if (Test-Path "$env:HOMEPATH\.m2\repository\org\projectlombok\lombok") {
+	$LOMBOK_PATH = (ls "$env:HOMEPATH\.m2\repository\org\projectlombok\lombok" | Sort-Object Name -Descending)[0]
+	$LOMBOK_VERSION = $LOMBOK_PATH[0].Name
+	$env:JDTLS_JVM_ARGS = "-javaagent:$LOMBOK_PATH\lombok-$LOMBOK_VERSION.jar"
+}
 
 function sgit {
     param(
@@ -49,6 +54,12 @@ function cd {
                 deactivate
             } 
         }
+}
+
+function which {
+    param([string]$command)
+
+    Get-Command $command | Select-Object -ExpandProperty Source
 }
 
 cd .
