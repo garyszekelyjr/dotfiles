@@ -24,7 +24,7 @@ function dot
 end
 
 function fish_prompt
-    printf "%s%s%s%s> " (set_color $fish_color_cwd) (prompt_pwd) (set_color normal) (fish_git_prompt)
+    printf "(%s@%s) %s%s%s%s> " (whoami) (hostname) (set_color $fish_color_cwd) (prompt_pwd) (set_color normal) (fish_git_prompt)
 end
 
 if test -e $HOME/.m2/repository/org/projectlombok/lombok/1.18.42/
