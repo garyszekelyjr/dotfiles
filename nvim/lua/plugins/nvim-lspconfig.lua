@@ -20,6 +20,7 @@ return {
 			cssls = {},
 			docker_language_server = {},
 			fish_lsp = {},
+			gdscript = {},
 			gopls = {},
 			html = {},
 			hyprls = {},
