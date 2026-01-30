@@ -20,7 +20,7 @@ function venv --on-variable PWD
 end
 
 function dot
-    cd $HOME/dotfiles
+    cd $HOME/git/private/dotfiles
 end
 
 function fish_prompt
@@ -41,3 +41,7 @@ venv
 export EDITOR=nvim
 
 pyenv init - fish | source
+
+alias t="tmux"
+alias l="ls -l"
+alias ll="ls -la"

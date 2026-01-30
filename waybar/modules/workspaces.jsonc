@@ -6,11 +6,10 @@
 				2,
 				3,
 				4,
-				5,
-				9
+				5
 			],
 		},
-		"format": "{name} {icon}",
+		"format": "{icon}",
 		"format-icons": {
 			"active": "",
 			"default": ""
