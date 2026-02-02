@@ -45,3 +45,4 @@ pyenv init - fish | source
 alias t="tmux"
 alias l="ls -l"
 alias ll="ls -la"
+alias g="git"

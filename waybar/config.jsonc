@@ -37,7 +37,6 @@
 		"bluetooth",
 		"wireplumber",
 		"backlight",
-		"battery",
-		"custom/power"
+		"battery"
 	]
 }
