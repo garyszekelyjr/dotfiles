@@ -37,7 +37,7 @@ function sgit {
 }
 
 function dot {
-	cd ~/dotfiles
+	cd ~/git/private/dotfiles
 }
 
 Remove-Alias -Name cd
