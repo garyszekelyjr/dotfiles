@@ -1,0 +1,7 @@
+{
+	"custom/igpu": {
+		"interval": 1,
+		"exec": "cat /sys/class/drm/card2/device/gpu_busy_percent",
+		"format": "iGPU: {}%"
+	}
+}

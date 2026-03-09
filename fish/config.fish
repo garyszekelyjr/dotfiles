@@ -41,6 +41,7 @@ venv
 export EDITOR=nvim
 
 pyenv init - fish | source
+rbenv init - | source
 
 alias t="tmux"
 alias l="ls -l"

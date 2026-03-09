@@ -1,0 +1,7 @@
+{
+	"custom/dgpu": {
+		"interval": 1,
+		"exec": "cat /sys/class/drm/card1/device/gpu_busy_percent",
+		"format": "dGPU: {}%"
+	}
+}

@@ -9,6 +9,8 @@
 		"~/.config/waybar/modules/bluetooth.jsonc",
 		"~/.config/waybar/modules/clock.jsonc",
 		"~/.config/waybar/modules/cpu.jsonc",
+		"~/.config/waybar/modules/custom/dgpu.jsonc",
+		"~/.config/waybar/modules/custom/igpu.jsonc",
 		"~/.config/waybar/modules/custom/power/config.jsonc",
 		"~/.config/waybar/modules/custom/wireguard/config.jsonc",
 		"~/.config/waybar/modules/idle_inhibitor.jsonc",
@@ -27,7 +29,9 @@
 		"clock",
 		"cpu",
 		"temperature",
-		"memory"
+		"memory",
+		"custom/igpu",
+		"custom/dgpu"
 	],
 	"modules-right": [
 		"tray",
