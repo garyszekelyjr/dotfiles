@@ -49,7 +49,6 @@ return {
 				bundle_path = "C:/Program Files/PowerShellEditorServices"
 			},
 			pyright = {},
-			r_language_server = {},
 			ruby_lsp = {},
 			ruff = {},
 			rust_analyzer = {},
