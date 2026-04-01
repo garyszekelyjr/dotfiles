@@ -28,7 +28,7 @@ for i = 1, 9 do
 end
 
 -- Plugin Keymaps
-vim.keymap.set("n", "<Space>o", ":topleft Outline!<CR>")
+vim.keymap.set("n", "<Space>o", ":topleft Outline<CR>")
 vim.keymap.set("n", "<Space>p", ":RenderMarkdown buf_toggle<CR>")
 vim.keymap.set("n", "<Space>x", ":Trouble diagnostics toggle<CR>")
 
