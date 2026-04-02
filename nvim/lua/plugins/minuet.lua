@@ -20,12 +20,17 @@ return {
 			n_completions = 1,
 			context_window = 512,
 			provider_options = {
-				-- openai_fim_compatible = {
-				-- 	api_key = function() return "NO_KEY_NEEDED" end,
-				-- 	name = "Ollama",
-				-- 	end_point = "http://10.8.0.1:11434/v1/completions",
-				-- 	model = "qwen2.5-coder:0.5b"
-				-- },
+				openai_fim_compatible = {
+					api_key = function() return "NO_KEY_NEEDED" end,
+					name = "Ollama",
+					-- end_point = "http://10.8.0.1:11434/v1/completions",
+					end_point = "http://localhost:11434/v1/completions",
+					model = "qwen2.5-coder:0.5b",
+					optional = {
+						max_tokens = 56,
+						top_p = 0.9,
+					},
+				},
 				gemini = {
 					model = "gemini-2.0-flash",
 					api_key = function() return "AIzaSyAogxLQKYr03Vs9M1Ex1VY8bzfbs_t228s" end,
