@@ -10,6 +10,8 @@ vim.keymap.set("n", "<Space>dx", ":bd<CR>")
 vim.keymap.set("n", "<Space>da", ":%bd!<CR>")
 vim.keymap.set("n", "<Space>gd", ":GitDiff<CR>")
 
+vim.opt.autocomplete = true
+
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 vim.opt.foldcolumn = "0"
