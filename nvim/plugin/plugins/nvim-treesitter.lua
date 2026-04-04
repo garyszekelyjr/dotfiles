@@ -1,6 +1,6 @@
 vim.pack.add({ {
 	src = "https://github.com/nvim-treesitter/nvim-treesitter",
-	version = "master"
+	version = "main"
 } })
 
 -- build = ":TSUpdate",
@@ -27,7 +27,7 @@ local parsers = {
 	"yaml"
 }
 
-require("nvim-treesitter.configs").setup({
+require("nvim-treesitter").setup({
 	ensure_installed = parsers,
 	sync_install = true,
 	auto_install = false,
