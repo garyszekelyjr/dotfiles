@@ -1,0 +1,1 @@
+/home/gszekely/git/public/nvim-lspconfig/lsp/fish_lsp.lua

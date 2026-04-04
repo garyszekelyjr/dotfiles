@@ -1,18 +1,23 @@
-local lazy = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+vim.filetype.add({
+	pattern = {
+		["docker%-compose.ya?ml"] = "yaml.docker-compose",
+	},
+})
 
-if not (vim.uv or vim.loop).fs_stat(lazy) then
-	vim.fn.system({
-		"git",
-		"clone",
-		"--filter=blob:none",
-		"--branch=stable",
-		"https://github.com/folke/lazy.nvim.git",
-		lazy
-	})
-end
+vim.g.python3_host_prog = vim.env.HOME .. "/.pyenv/versions/nvim/bin/python"
 
-vim.opt.rtp:prepend(lazy)
+vim.keymap.set("n", "<Space>dx", ":bd<CR>")
+vim.keymap.set("n", "<Space>da", ":%bd!<CR>")
+vim.keymap.set("n", "<Space>gd", ":GitDiff<CR>")
 
-require("lazy").setup({ spec = { import = "plugins" } })
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldcolumn = "0"
+vim.opt.foldtext = ""
+vim.opt.foldlevel = 99
 
-require("config")
+vim.opt.relativenumber = true
+vim.opt.number = true
+
+vim.opt.splitright = true
+vim.opt.splitbelow = true

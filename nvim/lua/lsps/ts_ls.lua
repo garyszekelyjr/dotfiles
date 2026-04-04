@@ -1,0 +1,1 @@
+/home/gszekely/git/public/nvim-lspconfig/lsp/ts_ls.lua

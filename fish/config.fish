@@ -47,3 +47,7 @@ alias t="tmux"
 alias l="ls -l"
 alias ll="ls -la"
 alias g="git"
+
+if test (tty) = /dev/tty1
+    uwsm start hyprland.desktop
+end

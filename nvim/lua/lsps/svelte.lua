@@ -1,0 +1,1 @@
+/home/gszekely/git/public/nvim-lspconfig/lsp/svelte.lua
