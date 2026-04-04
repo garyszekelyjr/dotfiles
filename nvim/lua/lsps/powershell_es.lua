@@ -1,1 +1,0 @@
-/home/gszekely/git/public/nvim-lspconfig/lsp/powershell_es.lua

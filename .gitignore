@@ -1,3 +1,5 @@
 .DS_Store
+
 fish_variables
-lazy-lock.json
+
+nvim/lua/lsp/*.lua
