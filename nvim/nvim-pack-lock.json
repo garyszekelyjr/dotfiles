@@ -25,6 +25,10 @@
       "rev": "74114f0df664f14d7c228945693ba68a3b70a794",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
     },
+    "minuet-ai.nvim": {
+      "rev": "33c6f4ad809bb28347c275cffc3e5700057d1c3c",
+      "src": "https://github.com/milanglacier/minuet-ai.nvim"
+    },
     "nvim": {
       "rev": "16408d203973da7e43fab87c6f9d3bf7fa98fa8b",
       "src": "https://github.com/catppuccin/nvim"
