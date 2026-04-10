@@ -1,6 +1,7 @@
 vim.pack.add({ "https://github.com/neovim/nvim-lspconfig" })
 
 local lsps = {
+	basedpyright = {},
 	bashls = {},
 	cssls = {},
 	docker_language_server = {},
@@ -18,19 +19,19 @@ local lsps = {
 			if client.workspace_folders then
 				local path = client.workspace_folders[1].name
 				if
-				    path ~= vim.fn.stdpath('config')
-				    and (vim.uv.fs_stat(path .. '/.luarc.json') or vim.uv.fs_stat(path .. '/.luarc.jsonc'))
+				    path ~= vim.fn.stdpath("config")
+				    and (vim.uv.fs_stat(path .. "/.luarc.json") or vim.uv.fs_stat(path .. "/.luarc.jsonc"))
 				then
 					return
 				end
 			end
 
-			client.config.settings.Lua = vim.tbl_deep_extend('force', client.config.settings.Lua, {
+			client.config.settings.Lua = vim.tbl_deep_extend("force", client.config.settings.Lua, {
 				runtime = {
-					version = 'LuaJIT',
+					version = "LuaJIT",
 					path = {
-						'lua/?.lua',
-						'lua/?/init.lua',
+						"lua/?.lua",
+						"lua/?/init.lua",
 					},
 				},
 				workspace = {
@@ -57,7 +58,7 @@ local lsps = {
 	powershell_es = {
 		bundle_path = "C:/Program Files/PowerShellEditorServices"
 	},
-	pyright = {},
+	-- pyright = {},
 	ruff = {},
 	rust_analyzer = {},
 	svelte = {},

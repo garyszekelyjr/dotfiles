@@ -17,5 +17,8 @@ require("lualine").setup {
 			"fileformat",
 		},
 	},
-	extensions = { "oil" }
+	extensions = {
+		"aerial",
+		"symbols-outline"
+	}
 }

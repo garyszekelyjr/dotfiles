@@ -5,7 +5,7 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
-	callback = function()
+	callback = function(ev)
 		vim.cmd("OutlineRefresh")
 	end
 })
@@ -13,11 +13,5 @@ vim.api.nvim_create_autocmd("LspAttach", {
 vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()
 		vim.highlight.on_yank({ timeout = 300 })
-	end
-})
-
-vim.api.nvim_create_autocmd("VimEnter", {
-	callback = function()
-		-- vim.cmd("topleft OutlineOpen!")
 	end
 })
