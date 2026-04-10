@@ -2,7 +2,7 @@ vim.pack.add({ "https://github.com/milanglacier/minuet-ai.nvim" })
 
 require("minuet").setup {
 	virtualtext = {
-		auto_trigger_ft = { "lua" },
+		auto_trigger_ft = {},
 		keymap = {
 			accept = "<A-A>",
 			accept_line = "<A-a>",

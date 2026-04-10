@@ -5,7 +5,7 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
-	callback = function(ev)
+	callback = function()
 		vim.cmd("OutlineRefresh")
 	end
 })

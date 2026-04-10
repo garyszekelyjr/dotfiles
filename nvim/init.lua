@@ -8,12 +8,6 @@ vim.g.python3_host_prog = vim.env.HOME .. "/.pyenv/versions/nvim/bin/python"
 
 vim.keymap.set("n", "<Space>gd", ":GitDiff<CR>")
 
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
-vim.opt.foldcolumn = "0"
-vim.opt.foldtext = ""
-vim.opt.foldlevel = 99
-
 vim.opt.relativenumber = true
 vim.opt.number = true
 

@@ -1,7 +1,7 @@
 vim.pack.add({ "https://github.com/neovim/nvim-lspconfig" })
 
 local lsps = {
-	basedpyright = {},
+	-- basedpyright = {},
 	bashls = {},
 	cssls = {},
 	docker_language_server = {},
@@ -58,7 +58,7 @@ local lsps = {
 	powershell_es = {
 		bundle_path = "C:/Program Files/PowerShellEditorServices"
 	},
-	-- pyright = {},
+	pyright = {},
 	ruff = {},
 	rust_analyzer = {},
 	svelte = {},
